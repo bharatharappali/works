@@ -1,0 +1,32 @@
+{
+  "bio": {
+    "description": "Bharath Arappali is a visual designer and Illustrator based in Milan, Italy.",
+    "focus": "His focus is at the intersection of visual identity and illustration, with a love for vibrant colors, organic textures, and natural elements.<br/><br/> Currently, he's diving into creative coding aiming to expand the boundaries of visual design.<br/><br/>Outside of work, you can find him playing table tennis, enjoying music, and mindlessly surfing the internet admiring the work of fellow creatives.",
+    "availability": "Open to Freelance works & Collaborations",
+    "contact": {
+      "email": {
+        "label": "Email",
+        "value": "bharatharappali@gmail.com"
+      },
+      "instagram": {
+        "label": "Instagram",
+        "link": "http://www.instagram.com/bharatharappali"
+      }
+    },
+    "cv": {
+      "label": "Download CV",
+      "file": "assets/Bharath_CV_2024.pdf",
+      "size": "100kb",
+      "format": "PDF"
+    },
+    "footer": {
+      "last_updated": "Last updated on Feb 2025",
+      "developer": "R. Prithviraj",
+      "linkedin": "linkedin.com/in/prithviraj-r-974a25120"
+    },
+    "image": {
+      "src": "images/wia_banner.png",
+      "alt": "Bharath's Photo"
+    }
+  }
+}

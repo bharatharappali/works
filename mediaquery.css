@@ -1,0 +1,231 @@
+@media (min-width: 800px) and (max-width: 1099px) {
+  .column {
+    flex: 50%;
+    max-width: 33.3%;
+    transition: all 0.4s ease-in-out;
+  }
+  .bio_section {
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    font-size: 80%;
+  }
+
+  .bio_section > div {
+    margin-bottom: 0.5rem;
+    padding-bottom: 3.3rem;
+    border-bottom: 1px solid;
+    overflow: hidden;
+  }
+
+  .bio_section > div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .bio__1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  nav {
+    top: 2.2rem !important;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .section {
+    margin-top: 2.3rem !important;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .name_section {
+    display: block !important;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1999;
+    padding-top: 0.2rem;
+    border-bottom: 1px solid;
+    font-size: 1.7rem !important;
+    transition: all 0.4s ease-in-out;
+  }
+  .bio_section {
+    display: none !important;
+  }
+
+  .bio_info {
+    width: 100%;
+    overflow: hidden;
+    top: 1.5rem !important;
+    left: 0;
+    height: calc(100vh - 1.4rem);
+    max-height: calc(100vh - 1.4rem);
+    margin-top: 2rem !important;
+  }
+
+  .bio_info > div {
+    margin-bottom: 0.5rem;
+    padding-bottom: 3.3rem;
+    border-bottom: 1px solid;
+    overflow: hidden;
+  }
+
+  .bio_info > div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .bio__1 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .bio_sec--4 {
+    display: none !important;
+  }
+
+  .container {
+    grid-template-columns: 1fr !important;
+  }
+  .navbar {
+    width: 98% !important;
+  }
+  .color-btn {
+    display: none;
+  }
+  .bio_info_link,
+  .color-btn__icon {
+    display: block !important;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .scroll-container {
+    padding: 10px;
+    height: 22rem;
+  }
+
+  .scroll-container .scroll-item {
+    height: 100%;
+    width: auto;
+    /* max-width: 90%; */
+  }
+
+  .scroll-container .scroll-item img,
+  .scroll-container .scroll-item video {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 599px) {
+  nav {
+    top: 2.3rem !important;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .name_section {
+    display: block !important;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1999;
+    padding-top: 0.2rem;
+    border-bottom: 1px solid;
+    font-size: 1.7rem !important;
+    transition: all 0.4s ease-in-out;
+  }
+  .bio_section {
+    display: none !important;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .section {
+    margin-top: 2.3rem !important;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .bio_info {
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 2rem);
+    max-height: calc(100vh - 2rem);
+    padding-top: 2rem;
+  }
+
+  .bio_info > div {
+    margin-bottom: 0.5rem;
+    padding-bottom: 2.8rem;
+    border-bottom: 1px solid;
+    overflow: hidden;
+  }
+
+  .bio_info > div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .bio__1 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .bio_sec--4 {
+    display: none !important;
+  }
+
+  .container {
+    grid-template-columns: 1fr !important;
+  }
+  .navbar {
+    width: 97% !important;
+  }
+  .color-btn {
+    display: none;
+  }
+  .bio_info_link,
+  .color-btn__icon {
+    display: block !important;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  .scroll-container {
+    padding: 10px;
+    height: 22rem;
+  }
+
+  .scroll-container .scroll-item {
+    height: 100%;
+    width: auto;
+  }
+  .scroll-container .scroll-item img,
+  .scroll-container .scroll-item video {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .scroll-button {
+    display: none !important;
+  }
+
+  .project-year {
+    text-align: right !important;
+  }
+}

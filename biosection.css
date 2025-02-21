@@ -1,0 +1,87 @@
+.bio_section {
+  width: 100%;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.bio_section > div {
+  margin-bottom: 0.5rem;
+  padding-bottom: 4.3rem;
+  border-bottom: 1px solid;
+  overflow: hidden;
+}
+
+.bio_section > div:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.bio__1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.bio-text {
+  line-height: 1.6;
+}
+.contact {
+  display: flex;
+  gap: 2rem;
+  padding-top: 0.5rem;
+  position: relative;
+}
+
+.email-section,
+.instagram-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 0.3rem;
+  position: relative;
+}
+
+.copy-message {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.show-message {
+  display: block;
+  opacity: 1;
+}
+
+.email-section .material-symbols-outlined,
+.instagram-section .material-symbols-outlined {
+  font-size: 1.7rem;
+}
+
+.cv {
+  display: inline-block;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.wia_banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}

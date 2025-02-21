@@ -1,0 +1,97 @@
+[
+  {
+    "type": "image",
+    "url": "md-img/bottle-360-cropped-1080.gif",
+    "alt": "Description of image 1"
+  },
+  {
+    "type": "video",
+    "url": "md-img/in28.mp4",
+    "alt": "Description of video 1"
+  },
+  {
+    "type": "video",
+    "url": "md-img/kili manidhan.mp4",
+    "alt": "Description of video 2"
+  },
+  {
+    "type": "image",
+    "url": "md-img/jemp.gif",
+    "alt": "Description of video 3"
+  },
+  {
+    "type": "video",
+    "url": "md-img/mg mockup grid.mp4",
+    "alt": "Description of video 4"
+  },
+  {
+    "type": "image",
+    "url": "md-img/mw-l--1.webp",
+    "alt": "Description of image 2"
+  },
+  {
+    "type": "image",
+    "url": "md-img/mw-l--2.webp",
+    "alt": "Description of image 3"
+  },
+  {
+    "type": "image",
+    "url": "md-img/mw-l--3.webp",
+    "alt": "Description of image 4"
+  },
+  {
+    "type": "image",
+    "url": "md-img/mw-s--1.webp",
+    "alt": "Description of image 5"
+  },
+  {
+    "type": "image",
+    "url": "md-img/mw-s--2.webp",
+    "alt": "Description of image 6"
+  },
+  {
+    "type": "image",
+    "url": "md-img/mw-s--3.webp",
+    "alt": "Description of image 7"
+  },
+  {
+    "type": "image",
+    "url": "md-img/mw-s--4.webp",
+    "alt": "Description of image 8"
+  },
+  {
+    "type": "image",
+    "url": "md-img/mw-s--5.webp",
+    "alt": "Description of image 9"
+  },
+  {
+    "type": "image",
+    "url": "md-img/mw-v--1.webp",
+    "alt": "Description of image 10"
+  },
+  {
+    "type": "image",
+    "url": "md-img/sign.gif",
+    "alt": "Description of image 11"
+  },
+  {
+    "type": "image",
+    "url": "md-img/tt-11.jpg",
+    "alt": "Description of image 12"
+  },
+  {
+    "type": "image",
+    "url": "md-img/vortex.gif",
+    "alt": "Description of image 13"
+  },
+  {
+    "type": "image",
+    "url": "md-img/vortex2 (1).gif",
+    "alt": "Description of image 14"
+  },
+  {
+    "type": "image",
+    "url": "md-img/wtf.gif",
+    "alt": "Description of image 15"
+  }
+]

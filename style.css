@@ -1,0 +1,172 @@
+@import url('biosection.css');
+@import url('work.css');
+@import url('lightbox.css');
+@import url('experiment.css');
+@import url('mediaquery.css');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  cursor: cell;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: 'Inter', Helvetica, sans-serif;
+  font-weight: 435;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  color: #2c2c2c;
+  max-width: 100vw;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0.3rem 0;
+  text-indent: 0;
+  margin: 0;
+}
+
+br {
+  margin: 0px 5px;
+}
+
+p {
+  margin: 0;
+}
+button {
+  border: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  gap: 0.2rem;
+  overflow: hidden;
+  height: 100vh;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.work_exp {
+  width: 100%;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.bio_info {
+  display: none;
+}
+
+nav {
+  display: flex;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid;
+  gap: unset;
+  justify-content: space-between;
+  transition: all 0.4s ease;
+  align-items: center;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 74%;
+}
+.nav-links {
+  display: flex;
+  margin: 0;
+  gap: 0.5rem;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.work_exp_section {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 2.5rem;
+}
+
+.section {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.nav-link.active:not(.exlude) {
+  opacity: 0.5;
+}
+
+.bio_info_link,
+.color-btn__icon,
+.name_section {
+  display: none;
+}
+
+.material-symbols-outlined {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.5s ease;
+  background-color: inherit;
+  color: inherit;
+}
+.color-btn,
+.color-btn__icon,
+.availability {
+  background-image: linear-gradient(
+    90deg,
+    #d0ff00,
+    #00ffff,
+    #0400ff,
+    #ff00aa,
+    #ff2a00
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: glowing 3.2s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

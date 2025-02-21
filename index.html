@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bharath Arappali - Graphic designer, Illustrator</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,550,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="bio_section" id="bio_section"></div>
+      <div class="work_exp">
+        <div class="name_section"><a href="#">Bharath Arappali</a></div>
+        <nav class="navbar" id="navbar">
+          <ul class="nav-links">
+            <li>
+              <a
+                class="nav-link bio_info_link"
+                aria-current="page"
+                data-target="#bio_info"
+                href="#bio_info"
+                >Info</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                aria-current="page"
+                data-target="#workSection"
+                href="#workSection"
+                >Work</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link active"
+                href="#expSection"
+                data-target="#expSection"
+                >Experience</a
+              >
+            </li>
+          </ul>
+          <div class="color-changing-btn">
+            <a class="color-btn" data-target="" id="color-changer-button"
+              >Bharath, your color palette sucks. Change it!
+            </a>
+            <a
+              class="material-symbols-outlined color-btn__icon"
+              id="color-changer-button_mbl"
+            >
+              format_color_fill
+            </a>
+          </div>
+        </nav>
+        <div class="work_exp_section">
+          <div class="section hidden bio_info" id="bio_info"></div>
+          <div class="section active workSection" id="workSection"></div>
+          <div class="section hidden expSection" id="expSection">
+            <div class="row">
+              <div class="column"></div>
+              <div class="column"></div>
+              <div class="column"></div>
+            </div>
+          </div>
+        </div>
+        <div class="lightbox" id="lightbox">
+          <div class="lightbox-content">
+            <span class="controls prev">&#8249;</span>
+            <span class="controls next">&#8250;</span>
+            <div id="lightboxMedia"></div>
+            <button class="close-button" id="closeButton">&times;</button>
+          </div>
+          <div class="footer" id="lightboxFooter"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
