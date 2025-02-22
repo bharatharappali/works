@@ -10,7 +10,7 @@
 
 .bio_section > div {
   margin-bottom: 0.5rem;
-  padding-bottom: 5.3rem;
+  padding-bottom: 7.9rem;
   border-bottom: 1px solid;
   overflow: hidden;
 }
@@ -63,10 +63,15 @@
   display: block;
   opacity: 1;
 }
+.email-section,
+.instagram-section,
+.availability {
+  font-size: 2rem;
+}
 
 .email-section .material-symbols-outlined,
 .instagram-section .material-symbols-outlined {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .cv {
