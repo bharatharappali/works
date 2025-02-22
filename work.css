@@ -1,5 +1,6 @@
 #workSection {
   scroll-behavior: smooth !important;
+  margin: 0.9rem 0 0 0;
 }
 
 .scroll-wrapper {
@@ -34,7 +35,6 @@
   transition: transform 0.3s ease;
   height: 90%;
   width: auto;
-  /* max-width: 75%; */
   background: transparent;
 }
 
@@ -85,7 +85,7 @@
 .project-details {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .title-info {
@@ -95,7 +95,6 @@
 
 .title {
   font-size: 2rem;
-  font-weight: bold;
 }
 
 .project-info {
@@ -104,8 +103,7 @@
 }
 
 .sub-title {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2rem;
 }
 
 .project-year {
@@ -115,16 +113,14 @@
 }
 
 .project-year p {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2rem;
 }
 
 .expandable-info {
   display: none;
   flex-wrap: wrap;
-  padding-top: 1rem;
-  margin-top: 1rem;
   gap: 1rem;
+  padding: 3rem 0;
 }
 
 .description-info,
@@ -141,7 +137,8 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  margin: 3rem 0;
+  padding: 0;
 }
 .less-info-btn {
   background: none;
@@ -151,9 +148,9 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  margin: 0 0 3rem 0;
 }
 
-.more-info-btn span {
-  margin-left: 5px;
+.expd-btn {
+  padding-left: 0.5rem;
 }

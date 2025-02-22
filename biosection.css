@@ -4,31 +4,33 @@
   position: sticky;
   top: 0;
   left: 0;
-  height: 100vh;
-  max-height: 100vh;
+  height: 100vh !;
+  max-height: 100vh !important;
 }
 
 .bio_section > div {
   margin-bottom: 0.5rem;
-  padding-bottom: 4.3rem;
+  padding-bottom: 5.3rem;
   border-bottom: 1px solid;
   overflow: hidden;
 }
 
 .bio_section > div:last-child {
-  border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.bio__1 {
-  font-size: 2rem;
-  font-weight: 400;
+.bio_section > div:nth-last-child(-n + 2) {
+  border-bottom: none;
 }
 
-.bio-text {
-  line-height: 1.6;
+.bio__1 {
+  font-size: 2rem;
 }
+
+/* .bio-text {
+  line-height: 1.5;
+} */
 .contact {
   display: flex;
   gap: 2rem;
@@ -71,8 +73,10 @@
   display: inline-block;
   padding: 0.5rem 0;
   border-radius: 5px;
-  text-decoration: none;
   transition: all 0.3s ease;
+}
+.link {
+  text-decoration: underline;
 }
 
 footer a:hover {
