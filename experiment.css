@@ -1,10 +1,14 @@
 #expSection {
   width: 100%;
-  padding: 0;
+  padding: 5rem 0 0 0 !important;
   margin: 0;
   right: 0;
   left: 0;
   height: 100vh;
+}
+
+.expSection::-webkit-scrollbar {
+  display: none;
 }
 .row {
   display: flex;
