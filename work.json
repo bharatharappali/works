@@ -95,9 +95,9 @@
     },
     {
       "title": "Sacmar",
-      "subTitle": "Brand Overhaul for an Italian flavour maker",
+      "subTitle": "Brand Overhaul for the Italian flavour maker, Sacmar",
       "year": "2024",
-      "description": "Since 1940 Sacmar produces essential oils and raw materials for the flavour industry. With more than 1.000 of flavours created over the years for the food, nutraceutical, pharmaceutical and oral hygiene industries, Sacmar has grown to be one of the highest ranked producer in the market.<br><br>The concept of the visual Identity stems from the intergenerational exchange that the platform strives to achieve. Wave diffraction was chosen as a metaphor for depicting the concept, which is reflected in the logomark and the visual imagery.",
+      "description": "Since 1940 Sacmar produces essential oils and raw materials for the flavour industry. With more than 1.000 of flavours created over the years for the food, nutraceutical, pharmaceutical and oral hygiene industries, Sacmar has grown to be one of the highest ranked producer in the market.<br><br>The refreshed wordmark draws inspiration from Sacmar’s unique fusion of technology and the creativity of its herbalists, seamlessly combining bold, straight lines with elegant, flowing curves. This design evokes a sense of dynamic, continuous motion, propelling the brand forward. <br><br>Colourful gradients were designed as a conceptual and visual extension of Sacmar’s brand identity, crafting a coherent yet diverse imagery.<br><br>Flavor kaleidoscopes act as key visuals and dynamic backgrounds, formed by blending these gradients with organic shapes derived from the Sacmar logo. As a versatile and visually striking element, they add depth and sophistication to marketing materials and digital platforms.",
       "projectType": "Visual identity design",
       "collab": "Studio Most, Milan, Italy",
       "brandStrategy": "Hasita, Mahesh",
@@ -106,47 +106,52 @@
       "carousel": [
         {
           "type": "image",
-          "url": "images/refoundry/rf--master.webp",
+          "url": "images/sacmar/Dropper bottle.jpg",
           "alt": "Image description 2"
         },
         {
-          "type": "image",
-          "url": "images/refoundry/rf--1.webp",
+          "type": "video",
+          "url": "images/sacmar/Treasure Trove Of Flavours.mp4",
           "alt": "Image description 1"
         },
         {
-          "type": "image",
-          "url": "images/refoundry/rf--2.webp",
+          "type": "video",
+          "url": "images/sacmar/Brand Book Animation.mp4",
           "alt": "Image description 2"
         },
         {
           "type": "image",
-          "url": "md-img/tt-11.jpg",
+          "url": "images/sacmar/Essential oil mockup.jpg",
           "alt": "Image description 2"
         },
         {
           "type": "image",
-          "url": "md-img/mw-s--4.webp",
+          "url": "images/sacmar/Mockup Bidone.jpg",
           "alt": "Image description 2"
         },
         {
           "type": "image",
-          "url": "images/refoundry/rf--3.webp",
+          "url": "images/sacmar/Fiera Mockup.jpg",
           "alt": "Image description 3"
         },
         {
           "type": "image",
-          "url": "images/refoundry/rf--4.webp",
+          "url": "images/sacmar/Organic-shapes_Flavour-Kaleidoscope.jpg",
           "alt": "Image description 4"
         },
         {
           "type": "image",
-          "url": "images/refoundry/rf--5.webp",
+          "url": "images/sacmar/Book_Flavour Kaleidoscope.jpg",
           "alt": "Image description 5"
         },
         {
-          "type": "image",
-          "url": "images/refoundry/rf--6.webp",
+          "type": "video",
+          "url": "images/sacmar/Website Scroll.mp4",
+          "alt": "Image description 6"
+        },
+        {
+          "type": "video",
+          "url": "images/sacmar/card prodotti animati.mp4",
           "alt": "Image description 6"
         }
       ]
