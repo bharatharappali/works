@@ -135,9 +135,13 @@
     max-width: 100%;
     max-height: 100%;
   }
+
+  .sub-title {
+    padding: 0 !important;
+  }
 }
 
-@media (min-width: 600px) and (max-width: 821px) {
+@media (min-width: 600px) and (max-width: 665px) {
   .project-year {
     flex: 0.5;
     text-align: right !important;
