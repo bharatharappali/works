@@ -11,10 +11,10 @@ export const bioSection = async () => {
         <div class="bio__1">
             <p>${bioData.bio.description}</p>
         </div>
-        <div class="bio_sec--1">
+        <div class="bio_sec--1 bt-1">
             <p class="bio-text">${bioData.bio.focus}</p>
         </div>
-        <div class="bio_sec--2">
+        <div class="bio_sec--2 bt-1">
             <p class="bio-text availability">${bioData.bio.availability}</p>
             <div class="contact">
                 <div class="email-section">
@@ -35,15 +35,15 @@ export const bioSection = async () => {
                 </div>
             </div>
         </div>
-        <div class="bio_sec--3">
+        <div class="bio_sec--3 bt-1">
             <a class="link cv" href="${bioData.bio.cv.file}" download="${bioData.bio.cv.file}">
                 ${bioData.bio.cv.label} (${bioData.bio.cv.format}, ${bioData.bio.cv.size})
             </a>
         </div>
-        <div class="bio_sec--4">
+        <div class="bio_sec--4 bt-1">
             <p id="timeStamp"></p>
         </div>
-        <div class="bio_sec--5">
+        <div class="bio_sec--5 bt-1">
             <div class="dateTime">
                 <p id="dateStamp">${bioData.bio.footer.last_updated}</p>
                 <footer>

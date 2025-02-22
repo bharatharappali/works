@@ -1,17 +1,18 @@
 .bio_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   overflow: hidden;
   position: sticky;
   top: 0;
   left: 0;
-  height: 100vh !;
-  max-height: 100vh !important;
+  height: 100vh !important;
+    /* max-height: 100vh !important; */
 }
 
-.bio_section > div {
-  margin-bottom: 0.5rem;
-  padding-bottom: 7.9rem;
-  border-bottom: 1px solid;
+.bio_section > div:not(:first-child) {
+  padding-top: 0.5rem;
   overflow: hidden;
 }
 
@@ -26,6 +27,10 @@
 
 .bio__1 {
   font-size: 2rem;
+}
+
+.bt-1{
+  border-top: 1px solid;
 }
 
 /* .bio-text {
@@ -76,7 +81,6 @@
 
 .cv {
   display: inline-block;
-  padding: 0.5rem 0;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
