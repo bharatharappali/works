@@ -2,23 +2,29 @@
   html {
     font-size: 55% !important;
   }
+
   .column {
     flex: 50%;
     max-width: 33.3%;
     transition: all 0.4s ease-in-out;
   }
+
   .bio_section {
     width: 100%;
     overflow: auto;
     top: 0;
     left: 0;
-    font-size: 80%;
   }
 
-  .bio_section > div {
+  /* .bio_section > div {
     margin-bottom: 0.5rem;
     padding-bottom: 2.3rem !important;
-    border-bottom: 1px solid;
+    border-bottom: 1px 
+    overflow: hidden;
+  } */
+
+  .bio_section > div:not(:first-child) {
+    padding-top: 0.5rem;
     overflow: hidden;
   }
 
@@ -27,15 +33,18 @@
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  .bio__1 {
+
+  /* .bio__1 {
     font-size: 2rem;
-  }
+  } */
+
   .bio_text {
     line-height: 0.5 !important;
   }
 }
 
 @media (min-width: 600px) and (max-width: 821px) {
+
   nav {
     top: 3.3rem !important;
     width: 100%;
@@ -60,6 +69,7 @@
     transition: all 0.4s ease-in-out;
     background-color: #fff;
   }
+
   .bio_section {
     display: none !important;
   }
@@ -74,10 +84,15 @@
     margin-top: 2rem !important;
   }
 
-  .bio_info > div {
+  /* .bio_info > div {
     margin-bottom: 0.5rem;
     padding-bottom: 3.3rem;
     border-bottom: 1px solid;
+    overflow: hidden;
+  } */
+
+  .bio_section > div:not(:first-child) {
+    padding-top: 0.5rem;
     overflow: hidden;
   }
 
