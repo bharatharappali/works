@@ -44,7 +44,6 @@ function changeColors() {
     .then((response) => response.json())
     .then((colorData) => {
       const currentColor = colorData.colors[currentIndex];
-      console.log("Current Color Scheme:", currentColor);
 
       document.body.style.backgroundColor = currentColor["bg-color"];
       document.body.style.color = currentColor["body-color"];
@@ -61,16 +60,13 @@ function changeColors() {
         a.style.backgroundColor = currentColor["bg-color"];
         a.style.color = currentColor["body-color"];
         a.style.borderBottom = `1px solid ${currentColor["body-color"]}`;
-        console.log("Updated tab button color:", a.style.color);
       });
       navLinks.forEach((a) => {
         a.style.color = currentColor["body-color"];
-        console.log("Updated tab button color:", a.style.color);
         a.offsetHeight;
       });
       navLink.forEach((a) => {
         a.style.color = currentColor["body-color"];
-        console.log("Updated tab button color:", a.style.color);
         a.offsetHeight;
       });
       textSection.forEach((a) => {

@@ -1,10 +1,11 @@
+function toCamelCase(str) {
+  return str.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase());
+}
 export async function workSection() {
   try {
     const response = await fetch("work.json");
     const data = await response.json();
     const workSection = document.getElementById("workSection");
-
-    console.log(data);
     const renderProjects = async (filter) => {
       workSection.querySelectorAll(".project").forEach((el) => el.remove());
 
@@ -20,7 +21,6 @@ export async function workSection() {
           projectDiv.className = "project d-flex gap-1 flex-column";
           projectDiv.style.borderBottom = "1px solid black";
           projectDiv.style.paddingBottom = "6px";
-          // projectDiv.style.marginBottom = '20px';
 
           const scrollWrapper = document.createElement("div");
           scrollWrapper.className = "scroll-wrapper";
@@ -225,13 +225,44 @@ export async function workSection() {
           descriptionDiv.className = "description-info col-md-6";
           descriptionDiv.innerHTML = `<p>${project.description}</p>`;
 
+          //   const additionalInfoDiv = document.createElement("div");
+          //   additionalInfoDiv.className = "additional-info col-md-6";
+          //   additionalInfoDiv.innerHTML = `
+          //   <p class="project-type">[Type: ${project.projectType}]</p>
+          //   <p class="collab">[Collaboration: ${project.collab}]</p>
+          //   <p class="client-status">[Status: ${project.clientStatus}]</p>
+          // `;
+
           const additionalInfoDiv = document.createElement("div");
           additionalInfoDiv.className = "additional-info col-md-6";
-          additionalInfoDiv.innerHTML = `
-          <p class="project-type">[Type: ${project.projectType}]</p>
-          <p class="collab">[Collaboration: ${project.collab}]</p>
-          <p class="client-status">[Status: ${project.clientStatus}]</p>
-        `;
+
+          const additionalInfo = project.additionalInfo;
+          if (additionalInfo) {
+            let content = "";
+
+            Object.entries(additionalInfo).forEach(([key, value]) => {
+              if (Array.isArray(value)) {
+                content += `<p class="${key}">[${toCamelCase(key)}: `;
+                content += value
+                  .map((item) => {
+                    if (item.name && item.plink) {
+                      return `<a href="${item.plink}" target="_blank">${item.name}</a>`;
+                    } else if (item.name) {
+                      return item.name;
+                    }
+                    return "";
+                  })
+                  .join(", ");
+                content += `]</p>`;
+              } else if (value !== null && value !== undefined) {
+                content += `<p class="${key}">[${toCamelCase(
+                  key
+                )}:${value}]</p>`;
+              }
+            });
+
+            additionalInfoDiv.innerHTML = content;
+          }
 
           expandableDiv.appendChild(descriptionDiv);
           expandableDiv.appendChild(additionalInfoDiv);
