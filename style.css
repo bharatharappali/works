@@ -120,11 +120,16 @@ nav {
   margin: 0;
   gap: 0.5rem;
   align-items: center;
-  /* transition: opacity 0.3s ease; */
+  transition: opacity 0.3s ease;
 }
 
 .nav-link {
   font-size: var(--h1-font-size);
+  opacity: 0.5;
+}
+
+.nav-link.active {
+  opacity: 1;
 }
 
 .work_exp_section {

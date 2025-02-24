@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
           navLink.style.opacity = "0.5";
         });
 
-        this.classList.add("active");
         this.style.opacity = "1";
+        // this.classList.add("active");
       }
     });
   });

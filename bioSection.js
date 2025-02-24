@@ -1,7 +1,7 @@
 export const bioSection = async () => {
   try {
-    const response = await fetch('bio.json');
-    if (!response.ok) throw new Error('Failed to load bio.json');
+    const response = await fetch("bio.json");
+    if (!response.ok) throw new Error("Failed to load bio.json");
 
     const bioData = await response.json();
 
@@ -18,7 +18,7 @@ export const bioSection = async () => {
             <p class="bio-text availability">${bioData.bio.availability}</p>
             <div class="contact">
                 <div class="email-section">
-                    <div class="email" id="copy-email">
+                    <div class="email contact_sec" id="copy-email">
                         <span>${bioData.bio.contact.email.label}</span>
                         <span class="material-symbols-outlined">content_copy</span>
                     </div>
@@ -27,11 +27,12 @@ export const bioSection = async () => {
                 </div>
                 <div class="instagram-section">
                     <span>
-                        <a href="${bioData.bio.contact.instagram.link}" target="_blank" rel="noopener noreferrer">
+                        <a class="contact_sec" href="${bioData.bio.contact.instagram.link}" target="_blank" rel="noopener noreferrer">
                             ${bioData.bio.contact.instagram.label}
+                             <span class="material-symbols-outlined">north_east</span>
                         </a>
+                       
                     </span>
-                    <span class="material-symbols-outlined">north_east</span>
                 </div>
             </div>
         </div>
@@ -59,8 +60,8 @@ export const bioSection = async () => {
       `;
     };
 
-    const bioSectionEl = document.getElementById('bio_section');
-    const bioInfoEl = document.getElementById('bio_info');
+    const bioSectionEl = document.getElementById("bio_section");
+    const bioInfoEl = document.getElementById("bio_info");
 
     updateBioContent(bioSectionEl);
     updateBioContent(bioInfoEl);
@@ -69,12 +70,12 @@ export const bioSection = async () => {
       if (!parent) return;
 
       parent
-        .querySelector('#copy-email')
-        ?.addEventListener('click', copyEmailAndOpen);
-      parent.querySelector('#mailto')?.addEventListener('click', mailto);
+        .querySelector("#copy-email")
+        ?.addEventListener("click", copyEmailAndOpen);
+      parent.querySelector("#mailto")?.addEventListener("click", mailto);
       parent
-        .querySelector('#timeStamp')
-        ?.addEventListener('click', updateItalyTime);
+        .querySelector("#timeStamp")
+        ?.addEventListener("click", updateItalyTime);
     };
 
     addEventListeners(bioSectionEl);
@@ -86,7 +87,7 @@ export const bioSection = async () => {
       navigator.clipboard
         .writeText(email)
         .then(() => showCopyMessage())
-        .catch((err) => console.error('Failed to copy email:', err));
+        .catch((err) => console.error("Failed to copy email:", err));
     }
 
     function mailto() {
@@ -94,23 +95,23 @@ export const bioSection = async () => {
       navigator.clipboard
         .writeText(email)
         .then(() => (window.location.href = `mailto:${email}`))
-        .catch((err) => console.error('Failed to copy email:', err));
+        .catch((err) => console.error("Failed to copy email:", err));
     }
 
     function showCopyMessage() {
-      document.querySelectorAll('#copy-message').forEach((messageElement) => {
-        messageElement.style.display = 'block';
+      document.querySelectorAll("#copy-message").forEach((messageElement) => {
+        messageElement.style.display = "block";
         setTimeout(() => {
-          messageElement.style.display = 'none';
+          messageElement.style.display = "none";
         }, 2000);
       });
     }
 
     function updateItalyTime() {
-      const italyTime = new Date().toLocaleTimeString('it-IT', {
-        timeZone: 'Europe/Rome',
+      const italyTime = new Date().toLocaleTimeString("it-IT", {
+        timeZone: "Europe/Rome",
       });
-      document.querySelectorAll('#timeStamp').forEach((el) => {
+      document.querySelectorAll("#timeStamp").forEach((el) => {
         el.textContent = `Milan [IT]: ${italyTime}`;
       });
     }
@@ -120,10 +121,10 @@ export const bioSection = async () => {
 
     function updateDate() {
       const date = new Date();
-      const options = { month: 'short', year: 'numeric' };
-      document.querySelectorAll('#dateStamp').forEach((el) => {
+      const options = { month: "short", year: "numeric" };
+      document.querySelectorAll("#dateStamp").forEach((el) => {
         el.textContent = `last updated on ${date.toLocaleDateString(
-          'en-US',
+          "en-US",
           options
         )}`;
       });
@@ -131,8 +132,8 @@ export const bioSection = async () => {
 
     updateDate();
   } catch (error) {
-    console.error('Error loading bio section:', error);
-    document.querySelectorAll('#bio_section, #bio_info').forEach((el) => {
+    console.error("Error loading bio section:", error);
+    document.querySelectorAll("#bio_section, #bio_info").forEach((el) => {
       if (el) el.innerHTML = `<p>Error loading content. Please try again.</p>`;
     });
   }

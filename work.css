@@ -135,6 +135,7 @@
 
 .additional-info a {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .more-info-btn {
