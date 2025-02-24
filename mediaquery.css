@@ -41,8 +41,13 @@
   .bio_text {
     line-height: 0.5 !important;
   }
-}
 
+  .bio-info{
+    display: none !important;
+  }
+
+}
+/* from 600px to 665px */
 @media (min-width: 600px) and (max-width: 821px) {
 
   nav {
@@ -91,7 +96,7 @@
     overflow: hidden;
   } */
 
-  .bio_section > div:not(:first-child) {
+  .bio_info > div:not(:first-child) {
     padding-top: 0.5rem;
     overflow: hidden;
   }
@@ -156,6 +161,7 @@
   }
 }
 
+/* from 600px to 665px */
 @media (min-width: 600px) and (max-width: 665px) {
   .project-year {
     flex: 0.5;
@@ -167,6 +173,7 @@
   }
 }
 
+/* 599px and below */
 @media (max-width: 599px) {
   nav {
     top: 3.2rem !important;
@@ -189,6 +196,7 @@
     transition: all 0.4s ease-in-out;
     background-color: #fff;
   }
+
   .bio_section {
     display: none !important;
     transition: all 0.4s ease-in-out;
@@ -207,12 +215,20 @@
     height: calc(100vh - 2rem);
     max-height: calc(100vh - 2rem);
     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .bio_info > div {
+  /* .bio_info > div {
     margin-bottom: 0.5rem;
     padding-bottom: 2.8rem;
     border-bottom: 1px solid;
+    overflow: hidden;
+  } */
+
+  .bio_info > div:not(:first-child) {
+    padding-top: 0.5rem;
     overflow: hidden;
   }
 
