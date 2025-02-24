@@ -257,7 +257,7 @@ export async function workSection() {
               } else if (value !== null && value !== undefined) {
                 content += `<p class="${key}">[${toCamelCase(
                   key
-                )}:${value}]</p>`;
+                )}: ${value}]</p>`;
               }
             });
 
