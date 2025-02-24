@@ -53,9 +53,7 @@ function changeColors() {
       const navLink = document.querySelectorAll(".link");
       const textSection = document.querySelectorAll(".text-section");
       const projectSection = document.querySelectorAll(".project");
-      const bioSection = document.querySelectorAll(".bio__1");
       const nameSection = document.querySelectorAll(".name_section");
-      const bio_Section = document.querySelectorAll(".bio_sec--3, .bio_sec--4");
       tabButtons.forEach((a) => {
         a.style.backgroundColor = currentColor["bg-color"];
         a.style.color = currentColor["body-color"];
@@ -86,11 +84,6 @@ function changeColors() {
       nameSection.forEach((a) => {
         a.style.backgroundColor = currentColor["bg-color"];
         a.style.color = currentColor["body-color"];
-        a.style.borderBottom = `1px solid ${currentColor["body-color"]}`;
-
-        a.offsetHeight;
-      });
-      bioSection.forEach((a) => {
         a.style.borderBottom = `1px solid ${currentColor["body-color"]}`;
 
         a.offsetHeight;

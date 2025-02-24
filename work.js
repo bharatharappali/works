@@ -171,7 +171,15 @@ export async function workSection() {
               index = (index + 1) % mediaArray.length;
               updateLightboxContent(index);
             };
-
+            document.onkeydown = (e) => {
+              if (e.key === "ArrowLeft") {
+                index = (index - 1 + mediaArray.length) % mediaArray.length;
+                updateLightboxContent(index);
+              } else if (e.key === "ArrowRight") {
+                index = (index + 1) % mediaArray.length;
+                updateLightboxContent(index);
+              }
+            };
             closeButton.onclick = () => {
               lightbox.style.display = "none";
             };

@@ -16,12 +16,11 @@
     left: 0;
   }
 
-  /* .bio_section > div {
-    margin-bottom: 0.5rem;
-    padding-bottom: 2.3rem !important;
-    border-bottom: 1px 
+  .bio_section > div {
+    padding-bottom: 1.3rem !important;
+    border-bottom: 1px solid;
     overflow: hidden;
-  } */
+  }
 
   .bio_section > div:not(:first-child) {
     padding-top: 0.5rem;
@@ -42,14 +41,12 @@
     line-height: 0.5 !important;
   }
 
-  .bio-info{
+  .bio-info {
     display: none !important;
   }
-
 }
 /* from 600px to 665px */
 @media (min-width: 600px) and (max-width: 821px) {
-
   nav {
     top: 3.3rem !important;
     width: 100%;
@@ -82,23 +79,17 @@
   .bio_info {
     width: 100%;
     overflow: hidden;
-    top: 1.5rem !important;
     left: 0;
-    height: calc(100vh - 1.4rem);
-    max-height: calc(100vh - 1.4rem);
-    margin-top: 2rem !important;
+    height: calc(100vh - 7rem);
+    max-height: calc(100vh -7rem);
+    margin-top: 5rem !important;
   }
 
-  /* .bio_info > div {
+  .bio_info > div {
     margin-bottom: 0.5rem;
-    padding-bottom: 3.3rem;
+    padding-bottom: 2.4rem;
+    overflow: hidden;
     border-bottom: 1px solid;
-    overflow: hidden;
-  } */
-
-  .bio_info > div:not(:first-child) {
-    padding-top: 0.5rem;
-    overflow: hidden;
   }
 
   .bio_info > div:last-child {
@@ -146,7 +137,6 @@
   .scroll-container .scroll-item {
     height: 100%;
     width: auto;
-    /* max-width: 90%; */
   }
 
   .scroll-container .scroll-item img,
@@ -158,6 +148,10 @@
 
   .sub-title {
     padding: 0 !important;
+  }
+
+  .lightbox .close-button {
+    top: calc(100vh - 68rem) !important;
   }
 }
 
@@ -199,7 +193,6 @@
 
   .bio_section {
     display: none !important;
-    transition: all 0.4s ease-in-out;
   }
 
   .section {
@@ -212,24 +205,16 @@
     overflow: hidden;
     top: 0;
     left: 0;
-    height: calc(100vh - 2rem);
-    max-height: calc(100vh - 2rem);
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: calc(100vh - 7rem);
+    max-height: calc(100vh - 7rem);
+    margin-top: 5rem !important;
   }
 
-  /* .bio_info > div {
+  .bio_info > div {
     margin-bottom: 0.5rem;
     padding-bottom: 2.8rem;
+    overflow: hidden;
     border-bottom: 1px solid;
-    overflow: hidden;
-  } */
-
-  .bio_info > div:not(:first-child) {
-    padding-top: 0.5rem;
-    overflow: hidden;
   }
 
   .bio_info > div:last-child {
@@ -296,6 +281,10 @@
   }
   .project-year {
     text-align: right !important;
+  }
+
+  .lightbox .close-button {
+    top: calc(100vh - 68rem) !important;
   }
 }
 

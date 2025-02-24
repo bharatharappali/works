@@ -16,10 +16,10 @@
   display: none;
 }
 
-:root{
---h1-font-size: 2rem;
---body-font-size: 1.39rem;
---top-border: 1px solid;
+:root {
+  --h1-font-size: 2rem;
+  --body-font-size: 1.39rem;
+  --top-border: 1px solid;
 }
 
 html {
@@ -120,10 +120,10 @@ nav {
   margin: 0;
   gap: 0.5rem;
   align-items: center;
-  transition: opacity 0.3s ease;
+  /* transition: opacity 0.3s ease; */
 }
 
-.nav-link{
+.nav-link {
   font-size: var(--h1-font-size);
 }
 
@@ -151,8 +151,8 @@ nav {
   transform: translateY(20px);
 }
 
-.nav-link.active:not(.exlude) {
-  opacity: 0.5;
+.color-btn {
+  font-size: var(--h1-font-size);
 }
 
 .bio_info_link,
