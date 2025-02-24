@@ -120,6 +120,16 @@
       },
       "carousel": [
         {
+          "type": "video",
+          "url": "images/sacmar/Cover.mp4",
+          "alt": "Video description 1"
+        },
+        {
+          "type": "video",
+          "url": "images/sacmar/Logo Construction And Reveal.mp4",
+          "alt": "Video description 2"
+        },
+        {
           "type": "image",
           "url": "images/sacmar/Dropper bottle.jpg",
           "alt": "Image description 2"
@@ -189,7 +199,7 @@
       "carousel": [
         {
           "type": "video",
-          "url": "images/oltre/o1.mp4",
+          "url": "images/oltre/01.mp4",
           "alt": "Image description 1"
         },
         {
