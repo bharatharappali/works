@@ -87,7 +87,7 @@
 
   .bio_info > div {
     margin-bottom: 0.5rem;
-    padding-bottom: 2.4rem;
+    padding-bottom: 3.5rem;
     overflow: hidden;
     border-bottom: 1px solid;
   }
@@ -96,6 +96,10 @@
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+
+  .bio_info > div:nth-last-child(-n + 2) {
+    border-bottom: none;
   }
   .bio__1 {
     font-size: 2rem;
@@ -212,7 +216,7 @@
 
   .bio_info > div {
     margin-bottom: 0.5rem;
-    padding-bottom: 2.8rem;
+    padding-bottom: 3.7rem;
     overflow: hidden;
     border-bottom: 1px solid;
   }
@@ -221,6 +225,10 @@
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+
+  .bio_info > div:nth-last-child(-n + 2) {
+    border-bottom: none;
   }
 
   .bio__1 {
@@ -256,7 +264,7 @@
     transition: all 0.4s ease-in-out;
   }
   .scroll-container {
-    padding: 10px;
+    padding: 10px 0;
     height: 22rem;
   }
 
@@ -273,9 +281,6 @@
     object-fit: cover;
   }
 
-  /* .scroll-button {
-    display: none !important;
-  } */
   .sub-title {
     padding: 2rem 0 0 0 !important;
   }
@@ -291,6 +296,11 @@
 @media (max-width: 399px) {
   .bio_info {
     overflow: auto !important;
+  }
+
+  .bio_info > div {
+    margin-bottom: 0.5rem;
+    padding-bottom: 1.8rem;
   }
 }
 @media (max-width: 365px) {

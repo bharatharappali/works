@@ -1,6 +1,7 @@
 #workSection {
   scroll-behavior: smooth !important;
   margin: 0.9rem 0 0 0;
+  padding-bottom: 10rem !important;
 }
 
 .scroll-wrapper {

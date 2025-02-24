@@ -8,11 +8,11 @@
   top: 0;
   left: 0;
   height: 100vh !important;
-  max-height: 100vh !important;
+  /* max-height: 100vh !important; */
 }
 
 .bio_section > div {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   padding-bottom: 5rem;
   border-bottom: 1px solid;
 }
