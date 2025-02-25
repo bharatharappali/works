@@ -87,7 +87,7 @@
 
   .bio_info > div {
     margin-bottom: 0.5rem;
-    padding-bottom: 3.5rem;
+    padding-bottom: 3.5rem !important;
     overflow: hidden;
     border-bottom: 1px solid;
   }
@@ -216,7 +216,7 @@
 
   .bio_info > div {
     margin-bottom: 0.5rem;
-    padding-bottom: 3.7rem;
+    padding-bottom: 3.1rem !important;
     overflow: hidden;
     border-bottom: 1px solid;
   }
