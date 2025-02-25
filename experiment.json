@@ -6,7 +6,7 @@
   },
   {
     "type": "video",
-    "url": "md-img/in28.mp4",
+    "url": "md-img/p1.mp4",
     "alt": "Description of video 1"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "type": "image",
-    "url": "md-img/jemp.gif",
+    "url": "md-img/p6.jpg",
     "alt": "Description of video 3"
   },
   {
@@ -30,14 +30,29 @@
     "alt": "Description of image 2"
   },
   {
+    "type": "video",
+    "url": "md-img/p3.mp4",
+    "alt": "Description of video 4"
+  },
+  {
     "type": "image",
     "url": "md-img/mw-l--2.webp",
     "alt": "Description of image 3"
   },
   {
+    "type": "video",
+    "url": "md-img/p2.mp4",
+    "alt": "Description of video 4"
+  },
+  {
     "type": "image",
     "url": "md-img/mw-l--3.webp",
     "alt": "Description of image 4"
+  },
+  {
+    "type": "video",
+    "url": "md-img/p4.mp4",
+    "alt": "Description of video 4"
   },
   {
     "type": "image",
@@ -53,6 +68,11 @@
     "type": "image",
     "url": "md-img/mw-s--3.webp",
     "alt": "Description of image 7"
+  },
+  {
+    "type": "video",
+    "url": "md-img/p5.mp4",
+    "alt": "Description of video 4"
   },
   {
     "type": "image",
