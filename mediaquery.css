@@ -101,6 +101,7 @@
     padding-bottom: 0;
     border-bottom: none;
   }
+
   .bio__1 {
     font-size: 2rem;
     font-weight: 400;
@@ -171,7 +172,7 @@
   }
 }
 
-/* 599px and below */
+/* 599px and below (Mobiles)*/
 @media (max-width: 599px) {
   nav {
     top: 3.2rem !important;
@@ -214,9 +215,9 @@
     margin-top: 5rem !important;
   }
 
-  .bio_info > div {
+  .bio_info > div:not(:last-child) {
     margin-bottom: 0.5rem;
-    padding-bottom: 3.1rem !important;
+    padding-bottom: 5.3rem !important;
     overflow: hidden;
     border-bottom: 1px solid;
   }
