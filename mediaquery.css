@@ -17,7 +17,7 @@
   }
 
   .bio_section > div {
-    padding-bottom: 1.3rem !important;
+    padding-bottom: 3.5rem !important;
     border-bottom: 1px solid;
     overflow: hidden;
   }
@@ -95,10 +95,10 @@
   .bio_info > div:last-child {
     border-bottom: none;
     margin-bottom: 0;
-    padding-bottom: 0;
   }
 
   .bio_info > div:nth-last-child(-n + 2) {
+    padding-bottom: 0;
     border-bottom: none;
   }
   .bio__1 {

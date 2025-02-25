@@ -1,7 +1,7 @@
 .bio_section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 100%;
   overflow: hidden;
   position: sticky;
@@ -13,7 +13,7 @@
 
 .bio_section > div {
   margin-bottom: 0.5rem;
-  padding-bottom: 0;
+  padding-bottom: 3.1rem;
   border-bottom: 1px solid;
 }
 
