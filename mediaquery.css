@@ -16,7 +16,7 @@
     left: 0;
   }
 
-  .bio_section > div {
+  /* .bio_section > div {
     padding-bottom: 3.5rem !important;
     border-bottom: 1px solid;
     overflow: hidden;
@@ -31,7 +31,7 @@
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
-  }
+  } */
 
   /* .bio__1 {
     font-size: 2rem;
@@ -265,7 +265,7 @@
   }
   .scroll-container {
     padding: 10px 0;
-    height: 22rem;
+    height: 25rem;
   }
 
   .scroll-container .scroll-item {
@@ -304,10 +304,17 @@
   }
 }
 @media (max-width: 365px) {
-  .project-year {
+  html {
+    font-size: 55% !important;
+  }
+
+  .title-info{
+    min-width:initial;
+  }
+  /* .project-year {
     flex: 0.5;
     text-align: left !important;
     min-width: 100px;
     padding: 1rem 0;
-  }
+  } */
 }

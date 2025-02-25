@@ -1,7 +1,7 @@
 .bio_section {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   width: 100%;
   overflow: hidden;
   position: sticky;
@@ -11,7 +11,7 @@
   /* max-height: 100vh !important; */
 }
 
-.bio_section > div {
+/* .bio_section > div {
   margin-bottom: 0.5rem;
   padding-bottom: 3.1rem;
   border-bottom: 1px solid;
@@ -24,6 +24,11 @@
 
 .bio_section > div:nth-last-child(-n + 2) {
   border-bottom: none;
+} */
+
+.bio_section> div:not(:first-child):not(:last-child){
+  border-top: 1px solid;
+  padding-top: 0.5rem;
 }
 
 .bio__1 {

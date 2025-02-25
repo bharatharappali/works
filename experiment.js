@@ -17,7 +17,7 @@ export const experiment = async () => {
     const textSection = document.createElement("div");
     textSection.className = "exp-text-section";
     textSection.textContent =
-      "All work and No play makes Bharath a dull boy, Here's an archive of WIPs, BTSs, fuck-ups and more";
+      "All work and No play makes Jack a dull boy, Here's an archive of WIPs, BTSs, fuck-ups and more";
     exp.insertBefore(textSection, exp.firstChild);
 
     data.forEach((item, index) => {
