@@ -131,10 +131,10 @@
   .color-btn__icon {
     display: block !important;
   }
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+  /* .column {
+    flex: 100%;
+    max-width: 100%;
+  } */
 
   #workSection {
     scroll-behavior: smooth !important;
