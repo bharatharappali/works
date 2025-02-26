@@ -33,11 +33,34 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         this.style.opacity = "1";
-        // this.classList.add("active");
+        this.classList.add("active");
       }
     });
   });
 });
+
+function handleResponsiveBioInfo() {
+  const bioInfo = document.getElementById("bio_info");
+  const workSection = document.getElementById("workSection");
+
+  if (!bioInfo || !workSection) return;
+
+  if (window.innerWidth >= 821) {
+    bioInfo.classList.remove("active");
+    bioInfo.style.display = "none";
+    bioInfo.classList.add("hidden");
+    setTimeout(() => {
+      workSection.classList.remove("hidden");
+      workSection.style.display = "block";
+      workSection.classList.add("active");
+    }, 20);
+  } else if (bioInfo.classList.contains("active")) {
+    bioInfo.style.display = "block";
+  }
+}
+window.addEventListener("resize", handleResponsiveBioInfo);
+document.addEventListener("DOMContentLoaded", handleResponsiveBioInfo);
+
 let currentIndex = 0;
 function changeColors() {
   fetch("color-palette.json")
