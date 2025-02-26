@@ -55,7 +55,7 @@ function handleResponsiveBioInfo() {
       workSection.classList.add("active");
     }, 20);
   } else if (bioInfo.classList.contains("active")) {
-    bioInfo.style.display = "block";
+    bioInfo.style.display = "flex";
   }
 }
 window.addEventListener("resize", handleResponsiveBioInfo);
