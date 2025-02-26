@@ -4,6 +4,11 @@
 @import url("experiment.css");
 @import url("mediaquery.css");
 
+@font-face {
+  font-family: "Standard";
+  src: url(fonts/standard-book-webfont.woff),url(fonts/standard-book-webfont.woff2);
+}
+
 *,
 *::before,
 *::after {
@@ -32,7 +37,7 @@ html {
 }
 
 body {
-  font-family: "Inter", Helvetica, sans-serif;
+  font-family: "Standard", Helvetica, sans-serif;
   font-size: var(--body-font-size);
   line-height: 1.25;
   color: #2c2c2c;
