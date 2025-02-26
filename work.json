@@ -7,6 +7,7 @@
       "description": "For Uniworld Logistics, communicating the legacy of two decades was as important as their foray into the future. The brand exercise and its visual extension capture the essence of the legacy meeting the future seamlessly.<br><br>The new visual imagery is inspired by the core story of 'United, We Move' with a bold color palette inspired by the modes of transportation. The design system consists of vertical and horizontal traingles , derived from the W of the logo mark, signifying movement and solutions in every aspects of Logistics.",
       "additionalInfo": {
         "projectType": "Visual identity design",
+        "client": "Uniworld Logistics",
         "brandStrategy": [
           {
             "name": "Hasita",
@@ -17,89 +18,88 @@
             "plink": "https://www.linkedin.com/in/hasita/"
           }
         ],
-        "status": "Up and Running",
-        "clientAndYear": "Uniworld Logistics/ 2024"
+        "status": "Up and Running"
       },
       "carousel": [
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--01.jpg",
-          "alt": "Image description 1"
-        },
-        {
-          "type": "iframe",
-          "url": "https://player.vimeo.com/video/1053050327",
-          "alt": "iframee Image description"
+          "alt": "Container Mockup"
         },
         {
           "type": "video",
           "url": "images/uniworld_logistics/uw--02.mp4",
-          "alt": "Image description 2"
+          "alt": "Logo animation"
+        },
+        {
+          "type": "video",
+          "url": "images/uniworld_logistics/uw--cp.mp4",
+          "alt": "Color Palette"
         },
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--03.jpg",
-          "alt": "Image description 3"
+          "alt": "Logo on context"
         },
         {
           "type": "video",
           "url": "images/uniworld_logistics/uw--04.mp4",
-          "alt": "Image description 4"
+          "alt": "Poster animation"
         },
         {
           "type": "video",
           "url": "images/uniworld_logistics/uw--05.mp4",
-          "alt": "Image description 5"
+          "alt": "Verbal Communication"
         },
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--06.jpg",
-          "alt": "Image description 6"
+          "alt": "Poster Mockup"
         },
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--07.jpg",
-          "alt": "Image description 7"
+          "alt": "Social Media"
         },
         {
           "type": "video",
           "url": "images/uniworld_logistics/uw--08.mp4",
-          "alt": "Image description 8"
+          "alt": "Promotional Materials"
         },
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--09.jpg",
-          "alt": "Image description 9"
+          "alt": "Water bottle mockup"
         },
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--10.jpg",
-          "alt": "Image description 10"
+          "alt": "Notebook Mockup"
         },
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--11.jpg",
-          "alt": "Image description 11"
+          "alt": "Tape Mockup"
         },
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--12.jpg",
-          "alt": "Image description 12"
+          "alt": "Gift box mockup"
         },
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--13.jpg",
-          "alt": "Image description 13"
+          "alt": "old and new logo"
         },
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--14.jpg",
-          "alt": "Image description 14"
+          "alt": "Artboard"
         },
         {
           "type": "image",
           "url": "images/uniworld_logistics/uw--15.jpg",
-          "alt": "Image description 15"
+          "alt": "file structure"
         }
       ]
     },
@@ -107,87 +107,104 @@
       "title": "Sacmar",
       "subTitle": "Brand Overhaul for the Italian flavour maker, Sacmar",
       "year": "2024",
-      "description": "Since 1940 Sacmar produces essential oils and raw materials for the flavour industry. With more than 1.000 of flavours created over the years for the food, nutraceutical, pharmaceutical and oral hygiene industries, Sacmar has grown to be one of the highest ranked producer in the market.<br><br>The refreshed wordmark draws inspiration from Sacmar’s unique fusion of technology and the creativity of its herbalists, seamlessly combining bold, straight lines with elegant, flowing curves. This design evokes a sense of dynamic, continuous motion, propelling the brand forward. <br><br>Colourful gradients were designed as a conceptual and visual extension of Sacmar’s brand identity, crafting a coherent yet diverse imagery.<br><br>Flavor kaleidoscopes act as key visuals and dynamic backgrounds, formed by blending these gradients with organic shapes derived from the Sacmar logo. As a versatile and visually striking element, they add depth and sophistication to marketing materials and digital platforms.",
+      "description": "Since 1940, Sacmar has produced essential oils and raw materials for the flavor industry, crafting over 1,000 flavors for food, nutraceutical, pharmaceutical, and oral hygiene sectors, becoming a top-ranked market leader.<br><br>The refreshed wordmark draws inspiration from Sacmar’s unique fusion of technology and the creativity of its herbalists, seamlessly combining bold, straight lines with elegant, flowing curves. This design evokes a sense of dynamic, continuous motion, propelling the brand forward. <br><br>Colourful gradients were designed as a conceptual and visual extension of the identity, crafting a coherent yet diverse imagery. Flavor kaleidoscopes act as key visuals and dynamic backgrounds, formed by blending these gradients with organic shapes derived from the Sacmar logo. As a versatile and visually striking element, they add depth and sophistication to marketing materials and digital platforms.",
       "additionalInfo": {
         "projectType": "Visual identity design",
-        "status": "Up and Running",
+        "client": [
+          {
+            "name": "Sacmar",
+            "plink": "https://www.sacmar.it"
+          }
+        ],
         "inCollaborationWith": [
           {
             "name": "Studio Most",
             "plink": "https://www.themost.it"
           }
-        ]
+        ],
+        "status": "Up and Running"
       },
       "carousel": [
         {
           "type": "video",
-          "url": "images/sacmar/Cover.mp4",
-          "alt": "Video description 1"
+          "url": "images/sacmar/Logo Construction And Reveal.mp4",
+          "alt": "Logo construction"
         },
         {
           "type": "video",
-          "url": "images/sacmar/Logo Construction And Reveal.mp4",
-          "alt": "Video description 2"
+          "url": "images/sacmar/Cover.mp4",
+          "alt": "Cover"
         },
         {
           "type": "image",
           "url": "images/sacmar/Dropper bottle.jpg",
-          "alt": "Image description 2"
+          "alt": "Dropper bottle"
         },
         {
           "type": "video",
           "url": "images/sacmar/Treasure Trove Of Flavours.mp4",
-          "alt": "Image description 1"
+          "alt": "Wave animation"
         },
         {
           "type": "video",
           "url": "images/sacmar/Brand Book Animation.mp4",
-          "alt": "Image description 2"
+          "alt": "Brand Book Animation"
         },
         {
           "type": "image",
           "url": "images/sacmar/Essential oil mockup.jpg",
-          "alt": "Image description 2"
+          "alt": "Essential oil mockup"
         },
         {
           "type": "image",
           "url": "images/sacmar/Mockup Bidone.jpg",
-          "alt": "Image description 2"
+          "alt": "Mockup Bidone"
         },
         {
           "type": "image",
           "url": "images/sacmar/Fiera Mockup.jpg",
-          "alt": "Image description 3"
+          "alt": "Fiera Mockup"
         },
         {
           "type": "image",
           "url": "images/sacmar/Organic-shapes_Flavour-Kaleidoscope.jpg",
-          "alt": "Image description 4"
+          "alt": "Organic-shapes_Flavour-Kaleidoscope"
+        },
+        {
+          "type": "image",
+          "url": "images/sacmar/text composition.jpg",
+          "alt": "Text_Flavour Kaleidoscope"
         },
         {
           "type": "image",
           "url": "images/sacmar/Book_Flavour Kaleidoscope.jpg",
-          "alt": "Image description 5"
-        },
-        {
-          "type": "video",
-          "url": "images/sacmar/Website Scroll.mp4",
-          "alt": "Image description 6"
+          "alt": "Book_Flavour Kaleidoscope"
         },
         {
           "type": "video",
           "url": "images/sacmar/card prodotti animati.mp4",
-          "alt": "Image description 6"
+          "alt": "Animated UI cards"
+        },
+        {
+          "type": "video",
+          "url": "images/sacmar/Website Scroll.mp4",
+          "alt": "Website Scroll animation"
         }
       ]
     },
     {
       "title": "Oltre",
-      "subTitle": "Visual Identity design for a high-end therapy clinic based in Milan, Italy",
+      "subTitle": "Visual Identity design for a high-end therapy clinic in Milan, Italy",
       "description": "Oltre cares to become a reference for those who want to put change, personal growth, overcoming difficulties related to emotional suffering and wellbeing at the center of their lives. <br><br>In a market where psychotherapy offerings are increasingly being positioned in terms of accessibility, Oltre positions itself in the opposite vertex, formulating the best possible path to their clients.<br><br>The developed visual imagery consists of a color palette with hues of blues, inspired from the interiors of the space, complemented by a serif-sans serif typography using Hedvig Letters serif and sans by Google fonts. To reflect the nature of their offering, an ample amount of whitespace is used as a key design element across all communication.",
       "year": "2024",
       "additionalInfo": {
         "projectType": "Visual identity design, Website design",
+        "client": [
+          {
+            "name": "Oltre",
+            "plink": "https://www.oltre-psicologia.it"
+          }
+        ],
         "status": "Up and Running",
         "webDevelopment": [
           {
@@ -200,184 +217,190 @@
         {
           "type": "video",
           "url": "images/oltre/01.mp4",
-          "alt": "Image description 1"
+          "alt": "Website Scroll animation"
         },
         {
           "type": "image",
           "url": "images/oltre/o2 (2).jpg",
-          "alt": "Image description 2"
+          "alt": "Mobile Mockup"
         },
         {
           "type": "image",
           "url": "images/oltre/o2.jpg",
-          "alt": "Image description 3"
+          "alt": "Standalone logo"
         },
         {
           "type": "image",
           "url": "images/oltre/o3 (2).jpg",
-          "alt": "Image description 4"
+          "alt": "Business card mockup"
         },
         {
           "type": "image",
           "url": "images/oltre/o4.jpg",
-          "alt": "Image description 5"
+          "alt": "Website mockup"
         },
         {
           "type": "image",
           "url": "images/oltre/o5.jpg",
-          "alt": "Image description 6"
+          "alt": "Mobile Mockup 2" 
         },
         {
           "type": "image",
           "url": "images/oltre/o6.jpg",
-          "alt": "Image description 7"
+          "alt": "Mobile screens"
         },
         {
           "type": "image",
           "url": "images/oltre/o7.jpg",
-          "alt": "Image description 8"
+          "alt": "Icon system"
         },
         {
           "type": "image",
           "url": "images/oltre/o8.jpg",
-          "alt": "Image description 9"
+          "alt": "Brand Moodboard"
         },
         {
           "type": "video",
           "url": "images/oltre/o9.mp4",
-          "alt": "Image description 10"
+          "alt": "Outro"
         }
       ]
     },
     {
       "title": "Romarì",
       "subTitle": "Organic hand drawn illustrations for the Brand Identity of Romarì",
-      "description": "Romarì is an Italian manufacturing company that produces and sells fragrances, essential oils, natural extracts and flavoring for the food and personal care product industries. The company work in partnership with agricultural businesses and certified suppliers around the world to produce unique solutions. <br><br> Organic and hand-drawn illustration style was chosen as a part of the visual identity system to reflect the brand values: transparency, respect for people and the environment. For this purpose, a range of compositions were envisioned and brought to life illustrating scenarios of product application. These illustrations were developed using mixed production techniques combining analog and digital means.",
+      "description": "Romarì is an Italian manufacturing company that produces and sells fragrances, essential oils, natural extracts and flavoring for the food and personal care product industries. The company work in partnership with agricultural businesses and certified suppliers around the world to produce unique solutions. <br><br> Organic and hand-drawn illustration style was chosen as a part of the visual identity system to reflect the brand values: transparency, respect for people and the environment. <br><br>For this purpose, a range of compositions were envisioned and brought to life illustrating scenarios of product application. These illustrations were developed using mixed production techniques combining analog and digital means.",
       "year": "2023",
       "additionalInfo": {
         "projectType": "Illustration",
-        "status": "Romarì, Design Proposal",
+        "client":"Romarì",
         "inCollaborationWith": [
           {
             "name": "Studio Most",
             "plink": "https://www.themost.it"
           }
-        ]
+        ],
+        "status": "Design Proposal"
       },
       "carousel": [
         {
           "type": "image",
-          "url": "images/romari/ro--1.webp",
-          "alt": "Image description 1"
+          "url": "images/romari/ro--1.jpg",
+          "alt": "Illustration- Italian aperitivo setting"
         },
         {
           "type": "image",
-          "url": "images/romari/ro--2.webp",
-          "alt": "Image description 2"
+          "url": "images/romari/ro--2.jpg",
+          "alt": "Illustration - Signature Italian breakfast"
         },
         {
           "type": "image",
-          "url": "images/romari/ro--3.webp",
-          "alt": "Image description 3"
+          "url": "images/romari/ro--5.jpg",
+          "alt": "Illustration - Fun and enjoyment"
         },
         {
           "type": "image",
-          "url": "images/romari/ro--4.webp",
-          "alt": "Image description 4"
+          "url": "images/romari/ro--3.jpg",
+          "alt": "Illustration - Bakery and confectionary"
         },
         {
           "type": "image",
-          "url": "images/romari/ro--5.webp",
-          "alt": "Image description 5"
+          "url": "images/romari/ro--4.jpg",
+          "alt": "Illustration - Wine and Panettone cake"
         },
         {
           "type": "image",
-          "url": "images/romari/ro--6.webp",
-          "alt": "Image description 6"
+          "url": "images/romari/ro--7.jpg",
+          "alt": "Set of stickers"
+        },
+        {
+          "type": "image",
+          "url": "images/romari/ro--8.jpg",
+          "alt": "Stickers on Bottle"
         }
       ]
     },
     {
       "title": "36 days of type",
-      "subTitle": "Establishing my illustration style drawing letters and numbers",
-      "description": "36 Days of Type is a project that invites designers, illustrators and graphic artists to express their particular interpretation of the letters and numbers of the Latin alphabet. <br><br> A yearly open call exploring the creative boundaries of letterforms, where participants are challenged to design a letter or number each day for 36 consecutive days. For this edition, I tried to explore and develop my illustration style. I'm a fan of things that are natural and organic and tried to reflect it in my works by giving my illustrations a handrawn look.",
+      "subTitle": "Establishing an Illustration style through letters and numbers",
+      "description": "36 Days of Type is a project that invites designers, illustrators and graphic artists to express their particular interpretation of the letters and numbers of the Latin alphabet. <br><br> A yearly open call exploring the creative boundaries of letterforms, where participants are challenged to design a letter or number each day for 36 consecutive days. This edition served as a creative excercise by focusin on exploring and developing an illustration style, drawing inspiration from natural and organic elements. A hand-drawn look was incorporated to reflect this aesthetic throughout the works.",
       "year": "2021",
       "additionalInfo": {
         "projectType": "Illustration",
-        "status": "Creative Excercise, Personal Project"
+        "nature": "Creative Excercise, Personal Project"
         },
       "carousel": [
         {
           "type": "image",
           "url": "images/36 days of type/36--0.webp",
-          "alt": "Image description 1"
+          "alt": "Letter composition"
         },
         {
           "type": "image",
           "url": "images/36 days of type/36--1.webp",
-          "alt": "Image description 2"
+          "alt": "Letter D N"
         },
         {
           "type": "image",
           "url": "images/36 days of type/36--2.webp",
-          "alt": "Image description 3"
+          "alt": "Letter P J"
         },
         {
           "type": "image",
           "url": "images/36 days of type/36--3.webp",
-          "alt": "Image description 4"
+          "alt": "Letter R W"
         },
         {
           "type": "image",
           "url": "images/36 days of type/36--4.webp",
-          "alt": "Image description 5"
+          "alt": "Letter X Y"
         }
       ]
     },
     {
       "title": "Personal Archive",
       "subTitle": "A collection of Illustrations",
-      "description": "Some illustrations from my personal archive. I've always sketched random things since childhood, but didn't know if they were good enough to illustrate or produce them for personal/commercial purposes and to show myself as an artist/ Illustrator. Good feedback from my friends/peers made me digitise them. The following pages contain some outputs from my sketchbook archive. There are a lot that I haven't digitised yet. Hoping to do them in my free time. My illustrations are a reflection of my personality-fun to be with- and the way my brain works - overthinking about any and every situation visualizing endless possibilities.",
-      "year": "Ongoing...",
+      "description": "A selection of illustrations from a personal archive. Sketching random ideas has been a habit since childhood, though uncertainty remained about their potential for illustration or production in personal and commercial projects. Encouragement from friends and peers led to the decision to digitize some of these sketches. <br><br>Showcased here are a few pieces from the sketchbook archive, with many yet to be digitized—something to explore in free time. These illustrations serve as a reflection of a creative mindset—playful, engaging, and constantly visualizing endless possibilities.",
+      "year": "Ongoing",
       "additionalInfo": {
         "projectType": "Illustration",
-        "status": "Creative Excercise, Personal Project"
+        "nature": "Creative Excercise, Personal Project"
       },
       "carousel": [
         {
           "type": "image",
           "url": "images/personal_archive/pa--1.webp",
-          "alt": "Image description 1"
+          "alt": "A bug"
         },
         {
           "type": "image",
           "url": "images/personal_archive/pa--2.webp",
-          "alt": "Image description 1"
+          "alt": "Collection of Bugs"
         },
         {
           "type": "image",
           "url": "images/personal_archive/pa--3.webp",
-          "alt": "Image description 1"
+          "alt": "Composition 3"
         },
         {
           "type": "image",
           "url": "images/personal_archive/pa--4.webp",
-          "alt": "Image description 1"
+          "alt": "Composition 4"
         },
         {
           "type": "image",
           "url": "images/personal_archive/pa--5.webp",
-          "alt": "Image description 1"
+          "alt": "Composition 5"
         },
         {
           "type": "image",
           "url": "images/personal_archive/pa--6.webp",
-          "alt": "Image description 1"
+          "alt": "Composition 6"
         },
         {
           "type": "image",
           "url": "images/personal_archive/pa--7.webp",
-          "alt": "Image description 1"
+          "alt": "Composition 7"
         }
       ]
     }

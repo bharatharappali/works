@@ -1,8 +1,8 @@
 {
   "bio": {
     "description": "Bharath Arappali is a visual designer and Illustrator based in Milan, Italy.",
-    "focus": "His focus is at the intersection of visual identity and illustration, with a love for vibrant colors, organic textures, and natural elements.<br/><br/> Currently, he's diving into creative coding aiming to expand the boundaries of visual design.<br/><br/>Outside of work, you can find him playing table tennis, enjoying music, and mindlessly surfing the internet admiring the work of fellow creatives.",
-    "availability": "Open to Freelance works & Collaborations",
+    "focus": "His focus is at the intersection of visual identity and illustration, with a love for vibrant colors, organic textures, and natural elements.<br/><br/> Currently, he's trying for ways to integrate Motion Graphics and creative coding into the workflow aiming to expand the boundaries of visual design.<br/><br/>Outside of work, you can find him playing table tennis, enjoying music, laughing at memes and mindlessly surfing the internet admiring the work of fellow creatives.",
+    "availability": "Available for New Projects",
     "contact": {
       "email": {
         "label": "Email",
@@ -16,7 +16,7 @@
     "cv": {
       "label": "Download CV",
       "file": "assets/Bharath_CV  2025.pdf",
-      "size": "100kb",
+      "size": "79kb",
       "format": "PDF"
     },
     "footer": {
@@ -26,7 +26,7 @@
     },
     "image": {
       "src": "images/wia_banner.png",
-      "alt": "Bharath's Photo"
+      "alt": "World Illustration Awards 2023"
     }
   }
 }
