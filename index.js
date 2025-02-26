@@ -42,22 +42,35 @@ document.addEventListener("DOMContentLoaded", function () {
 function handleResponsiveBioInfo() {
   const bioInfo = document.getElementById("bio_info");
   const workSection = document.getElementById("workSection");
+  const expSection = document.getElementById("expSection");
 
-  if (!bioInfo || !workSection) return;
+  if (!bioInfo || !workSection || !expSection) return;
 
   if (window.innerWidth >= 821) {
     bioInfo.classList.remove("active");
     bioInfo.style.display = "none";
     bioInfo.classList.add("hidden");
+
     setTimeout(() => {
-      workSection.classList.remove("hidden");
-      workSection.style.display = "block";
-      workSection.classList.add("active");
+      if (!expSection.classList.contains("active")) {
+        workSection.classList.remove("hidden");
+        workSection.style.display = "block";
+        workSection.classList.add("active");
+      }
     }, 20);
   } else if (bioInfo.classList.contains("active")) {
     bioInfo.style.display = "flex";
   }
+
+  if (expSection.classList.contains("active")) {
+    workSection.classList.add("hidden");
+    workSection.style.display = "none";
+  } else if (workSection.classList.contains("active")) {
+    expSection.classList.add("hidden");
+    expSection.style.display = "none";
+  }
 }
+
 window.addEventListener("resize", handleResponsiveBioInfo);
 document.addEventListener("DOMContentLoaded", handleResponsiveBioInfo);
 
