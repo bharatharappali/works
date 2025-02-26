@@ -59,7 +59,7 @@ function handleResponsiveBioInfo() {
       }
     }, 20);
   } else if (bioInfo.classList.contains("active")) {
-    bioInfo.style.display = "flex";
+    bioInfo.style.display = "block";
   }
 
   if (expSection.classList.contains("active")) {
