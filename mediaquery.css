@@ -77,14 +77,14 @@
   }
 
   .bio_info {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 5rem;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     left: 0;
-    height: calc(100vh - 7rem);
-    max-height: calc(100vh -7rem);
+    height: 100vh;
+    max-height: 100vh;
     margin-top: 5rem !important;
   }
 
@@ -217,15 +217,16 @@
   }
 
   .bio_info {
+    display: flex !important;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     /* top: 0;
     left: 0; */
-    height: calc(100vh - 10rem);
-    max-height: calc(100vh - 10rem);
-    margin-top: 5rem !important;
+    height : 100vh;
+    max-height : 100vh;
+    margin-top : 5rem !important;
   }
 
   .bio_info > div:not(:first-child):not(:last-child) {
@@ -318,8 +319,7 @@
 
 @media (max-width: 399px) {
   .bio_info {
-    overflow: hidden !important;
-    gap: 1.5rem !important;
+    overflow: auto !important;
   }
 
   /* .bio_info > div {
