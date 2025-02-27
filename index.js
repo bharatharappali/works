@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
           section.classList.remove("active");
           section.classList.add("hidden");
           section.style.display = "none";
+          section.scrollTop = 0;
         });
 
         const targetSection = document.querySelector(targetID);
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
           setTimeout(() => {
             targetSection.classList.remove("hidden");
             targetSection.classList.add("active");
+            targetSection.scrollTop = 0;
           }, 10);
         } else {
           console.error("Target section not found:", targetID);
