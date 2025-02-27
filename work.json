@@ -23,12 +23,12 @@
       "carousel": [
         {
           "type": "image",
-          "url": "images/uniworld_logistics/uw--01.jpg",
+          "url": "https://drive.google.com/file/d/0B3m_CHYLqNqHT1ZodjhNcEx5bVk/view?usp=sharing&resourcekey=0-P3TwjzwkVgI2G5xOmQBguw",
           "alt": "Container Mockup"
         },
         {
           "type": "video",
-          "url": "images/uniworld_logistics/uw--02.mp4",
+          "url": "https://drive.google.com/file/d/1DrSI5taflCWtvM3c0tjGO2-7sDfBh-Y7/view?usp=sharing",
           "alt": "Logo animation"
         },
         {
@@ -127,7 +127,7 @@
       "carousel": [
         {
           "type": "video",
-          "url": "images/sacmar/Logo Construction And Reveal.mp4",
+          "url": "https://drive.google.com/file/d/1WmbaYaFAyn5Zee-3_RakFp9xlJNimXj4/view?usp=sharing",
           "alt": "Logo construction"
         },
         {
@@ -242,7 +242,7 @@
         {
           "type": "image",
           "url": "images/oltre/o5.jpg",
-          "alt": "Mobile Mockup 2" 
+          "alt": "Mobile Mockup 2"
         },
         {
           "type": "image",
@@ -273,7 +273,7 @@
       "year": "2023",
       "additionalInfo": {
         "projectType": "Illustration",
-        "client":"Romarì",
+        "client": "Romarì",
         "inCollaborationWith": [
           {
             "name": "Studio Most",
@@ -328,7 +328,7 @@
       "additionalInfo": {
         "projectType": "Illustration",
         "nature": "Creative Excercise, Personal Project"
-        },
+      },
       "carousel": [
         {
           "type": "image",
