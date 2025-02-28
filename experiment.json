@@ -1,7 +1,7 @@
 [
   {
     "type": "image",
-    "url": "md-img/pg-01.jpg",
+    "url": "md-img/pg-01.webp",
     "alt": "Description of image 1"
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "type": "image",
-    "url": "md-img/p6.jpg",
+    "url": "md-img/p6.webp",
     "alt": "Description of video 3"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "type": "image",
-    "url": "md-img/pg-03.jpg",
+    "url": "md-img/pg-03.webp",
     "alt": "Description of image 1"
   },
   {
@@ -46,22 +46,22 @@
   },
   {
     "type": "image",
-    "url": "md-img/pg-02.jpg",
+    "url": "md-img/pg-02.webp",
     "alt": "Description of image 1"
   },
   {
     "type": "image",
-    "url": "md-img/pg-04.jpg",
+    "url": "md-img/pg-04.webp",
     "alt": "Description of image 1"
   },
   {
     "type": "image",
-    "url": "md-img/pg-06.jpg",
+    "url": "md-img/pg-06.webp",
     "alt": "Description of image 1"
   },
   {
     "type": "image",
-    "url": "md-img/pg-08.png",
+    "url": "md-img/pg-08.webp",
     "alt": "Description of image 1"
   },
   {
@@ -71,38 +71,28 @@
   },
   {
     "type": "image",
-    "url": "md-img/pg-10.jpg",
+    "url": "md-img/pg-10.webp",
     "alt": "Description of image 1"
   },
   {
     "type": "image",
-    "url": "md-img/pg-05.jpg",
+    "url": "md-img/pg-05.webp",
     "alt": "Description of image 1"
   },
   {
     "type": "image",
-    "url": "md-img/report_0004_08.jpg",
+    "url": "md-img/report_0004_08.webp",
     "alt": "Description of image 1"
   },
   {
     "type": "image",
-    "url": "md-img/atn-war.png",
+    "url": "md-img/atn-war.webp",
     "alt": "Description of image 1"
-  },
-  {
-    "type": "image",
-    "url": "md-img/mw-l--2.webp",
-    "alt": "Description of image 3"
   },
   {
     "type": "video",
     "url": "md-img/p2.mp4",
     "alt": "Description of video 4"
-  },
-  {
-    "type": "image",
-    "url": "md-img/mw-l--3.webp",
-    "alt": "Description of image 4"
   },
   {
     "type": "video",
@@ -116,7 +106,7 @@
   },
   {
     "type": "image",
-    "url": "md-img/tt-11.jpg",
+    "url": "md-img/tt-11.webp",
     "alt": "Description of image 12"
   },
   {
@@ -126,7 +116,7 @@
   },
   {
     "type": "image",
-    "url": "md-img/pg-07.jpg",
+    "url": "md-img/pg-07.webp",
     "alt": "Description of image 1"
   },
   {
@@ -141,7 +131,7 @@
   },
   {
     "type": "image",
-    "url": "md-img/pg-09.png",
+    "url": "md-img/pg-09.webp",
     "alt": "Description of image 1"
   },
   {
@@ -151,18 +141,18 @@
   },
   {
     "type": "image",
-    "url": "md-img/vortex.gif",
-    "alt": "Description of image 13"
-  },
-  {
-    "type": "image",
-    "url": "md-img/sign.gif",
-    "alt": "Description of image 11"
+    "url": "md-img/mw-l--3.webp",
+    "alt": "Description of image 4"
   },
   {
     "type": "video",
     "url": "md-img/Cb-Master.mp4",
     "alt": "Description of image 1"
+  },
+  {
+    "type": "image",
+    "url": "md-img/mw-l--2.webp",
+    "alt": "Description of image 3"
   },
   {
     "type": "image",
