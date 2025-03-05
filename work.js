@@ -211,12 +211,14 @@ export async function workSection() {
             updateLightboxContent(index);
             lightbox.style.display = "flex";
 
-            prevButton.onclick = () => {
+            prevButton.onclick = (event) => {
+              event.stopPropagation();
               index = (index - 1 + mediaArray.length) % mediaArray.length;
               updateLightboxContent(index);
             };
 
-            nextButton.onclick = () => {
+            nextButton.onclick = (event) => {
+              event.stopPropagation();
               index = (index + 1) % mediaArray.length;
               updateLightboxContent(index);
             };

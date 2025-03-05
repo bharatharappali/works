@@ -124,8 +124,14 @@ export const experiment = async () => {
       lightbox.classList.remove("show");
     }
 
-    prevButton.addEventListener("click", () => navigateLightbox(-1));
-    nextButton.addEventListener("click", () => navigateLightbox(1));
+    prevButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      navigateLightbox(-1);
+    });
+    nextButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      navigateLightbox(1);
+    });
     closeButton.addEventListener("click", closeLightbox);
 
     lightbox.onclick = (event) => {
