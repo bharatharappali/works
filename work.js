@@ -38,7 +38,7 @@ export async function workSection() {
           scrollContainer.className = "scroll-container";
 
           const mediaElements = await Promise.all(
-            project.carousel.map(async (item) => {
+            project.carousel.map(async (item, index) => {
               const scrollItem = document.createElement("div");
               scrollItem.className = "scroll-item";
               const mediaWrapper = document.createElement("div");
@@ -106,10 +106,10 @@ export async function workSection() {
               mediaWrapper.appendChild(mediaEle);
               scrollItem.appendChild(mediaWrapper);
               mediaEle.addEventListener("click", (event) => {
-                const mediaIndex = [...scrollContainer.children].indexOf(
-                  event.currentTarget.parentElement
-                );
-                openLightbox(project.carousel, mediaIndex);
+                // const mediaIndex = [...scrollContainer.children].indexOf(
+                //   event.currentTarget.parentElement
+                // );
+                openLightbox(project.carousel, index);
               });
 
               return scrollItem;
