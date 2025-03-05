@@ -136,18 +136,18 @@ export async function workSection() {
 
           projectDiv.appendChild(scrollWrapper);
 
-          function openLightbox(mediaArray, index) {
+          function openLightbox(mediaArray, initialIndex) {
             const lightbox = document.getElementById("lightbox");
             const lightboxMedia = document.getElementById("lightboxMedia");
             const lightboxFooter = document.getElementById("lightboxFooter");
             const prevButton = document.querySelector(".controls.prev");
             const nextButton = document.querySelector(".controls.next");
             const closeButton = document.getElementById("closeButton");
-
             let startX = 0;
             let endX = 0;
+            let index = initialIndex;
 
-            function updateLightboxContent(index) {
+            function updateLightboxContent() {
               const item = mediaArray[index];
               lightboxMedia.innerHTML = "";
 
@@ -199,59 +199,64 @@ export async function workSection() {
 
               mediaEle.addEventListener("touchend", () => {
                 if (startX - endX > 50) {
-                  index = (index + 1) % mediaArray.length;
-                  updateLightboxContent(index);
+                  navigateLightbox(1);
                 } else if (endX - startX > 50) {
-                  index = (index - 1 + mediaArray.length) % mediaArray.length;
-                  updateLightboxContent(index);
+                  navigateLightbox(-1);
                 }
               });
             }
 
-            updateLightboxContent(index);
+            function navigateLightbox(direction) {
+              index =
+                (index + direction + mediaArray.length) % mediaArray.length;
+              updateLightboxContent();
+            }
+
+            function closeLightbox() {
+              lightbox.style.display = "none";
+              document.removeEventListener("keydown", keydownHandler);
+            }
+
+            function keydownHandler(e) {
+              if (e.key === "ArrowLeft") {
+                navigateLightbox(-1);
+              } else if (e.key === "ArrowRight") {
+                navigateLightbox(1);
+              } else if (e.key === "Escape") {
+                closeLightbox();
+              }
+            }
+
+            updateLightboxContent();
             lightbox.style.display = "flex";
+
+            document.removeEventListener("keydown", keydownHandler);
+            document.addEventListener("keydown", keydownHandler);
 
             prevButton.onclick = (event) => {
               event.stopPropagation();
-              index = (index - 1 + mediaArray.length) % mediaArray.length;
-              updateLightboxContent(index);
+              navigateLightbox(-1);
             };
 
             nextButton.onclick = (event) => {
               event.stopPropagation();
-              index = (index + 1) % mediaArray.length;
-              updateLightboxContent(index);
+              navigateLightbox(1);
             };
-            document.onkeydown = (e) => {
-              if (e.key === "ArrowLeft") {
-                index = (index - 1 + mediaArray.length) % mediaArray.length;
-                updateLightboxContent(index);
-              } else if (e.key === "ArrowRight") {
-                index = (index + 1) % mediaArray.length;
-                updateLightboxContent(index);
-              }
-            };
-            closeButton.onclick = () => {
-              lightbox.style.display = "none";
-            };
+
+            closeButton.onclick = closeLightbox;
 
             lightbox.onclick = (event) => {
               if (!lightboxMedia.contains(event.target)) {
-                lightbox.style.display = "none";
+                closeLightbox();
               }
             };
 
-            document.addEventListener("keydown", (e) => {
-              if (e.key === "Escape") lightbox.style.display = "none";
-            });
-
             lightbox.addEventListener("touchstart", (e) => {
               if (!lightboxMedia.contains(e.target)) {
-                lightbox.style.display = "none";
+                closeLightbox();
               }
             });
           }
-
           // Project Details
           const detailsDiv = document.createElement("div");
           detailsDiv.className = "project-details row mt-3";

@@ -13,8 +13,6 @@ export const experiment = async () => {
     const closeButton = document.getElementById("closeButton");
 
     let currentIndex = 0;
-    let startX = 0;
-    let endX = 0;
 
     const textSection = document.createElement("div");
     textSection.className = "exp-text-section";
@@ -24,18 +22,14 @@ export const experiment = async () => {
 
     data.forEach((item, index) => {
       const columnIndex = index % columns.length;
-
       const mediaContainer = document.createElement("div");
       mediaContainer.className = "media-container";
-
       const mediaWrapper = document.createElement("div");
       mediaWrapper.className = "media-wrapper";
-
       const loader = document.createElement("span");
       loader.className = "loader";
 
       let mediaElement;
-
       if (item.type === "image") {
         mediaElement = document.createElement("img");
         mediaElement.src = item.url;
@@ -65,6 +59,7 @@ export const experiment = async () => {
           }, 500);
         };
       }
+
       mediaWrapper.appendChild(loader);
       mediaWrapper.appendChild(mediaElement);
       mediaContainer.appendChild(mediaWrapper);
@@ -75,7 +70,13 @@ export const experiment = async () => {
 
     function openLightbox(index) {
       currentIndex = index;
-      const item = data[currentIndex];
+      updateLightboxContent(currentIndex);
+      lightbox.style.display = "flex";
+      lightbox.classList.add("show");
+    }
+
+    function updateLightboxContent(index) {
+      const item = data[index];
       lightboxMedia.innerHTML = "";
 
       let mediaElement;
@@ -92,31 +93,12 @@ export const experiment = async () => {
       }
 
       lightboxMedia.appendChild(mediaElement);
-      lightboxFooter.textContent = `Item ${currentIndex + 1} of ${data.length}`;
-
-      lightbox.style.display = "flex";
-      lightbox.classList.add("show");
-
-      mediaElement.addEventListener("touchstart", (e) => {
-        startX = e.touches[0].clientX;
-      });
-
-      mediaElement.addEventListener("touchmove", (e) => {
-        endX = e.touches[0].clientX;
-      });
-
-      mediaElement.addEventListener("touchend", () => {
-        if (startX - endX > 50) {
-          navigateLightbox(1);
-        } else if (endX - startX > 50) {
-          navigateLightbox(-1);
-        }
-      });
+      lightboxFooter.textContent = `Item ${index + 1} of ${data.length}`;
     }
 
     function navigateLightbox(direction) {
       currentIndex = (currentIndex + direction + data.length) % data.length;
-      openLightbox(currentIndex);
+      updateLightboxContent(currentIndex);
     }
 
     function closeLightbox() {
@@ -124,23 +106,10 @@ export const experiment = async () => {
       lightbox.classList.remove("show");
     }
 
-    prevButton.addEventListener("click", (event) => {
-      event.stopPropagation();
-      navigateLightbox(-1);
-    });
-    nextButton.addEventListener("click", (event) => {
-      event.stopPropagation();
-      navigateLightbox(1);
-    });
-    closeButton.addEventListener("click", closeLightbox);
+    document.removeEventListener("keydown", handleKeyDown);
+    document.addEventListener("keydown", handleKeyDown);
 
-    lightbox.onclick = (event) => {
-      if (!lightboxMedia.contains(event.target)) {
-        lightbox.style.display = "none";
-      }
-    };
-
-    document.addEventListener("keydown", (e) => {
+    function handleKeyDown(e) {
       if (e.key === "ArrowLeft") {
         navigateLightbox(-1);
       } else if (e.key === "ArrowRight") {
@@ -148,17 +117,25 @@ export const experiment = async () => {
       } else if (e.key === "Escape") {
         closeLightbox();
       }
+    }
+
+    prevButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      navigateLightbox(-1);
     });
 
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeLightbox();
+    nextButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      navigateLightbox(1);
     });
 
-    lightbox.addEventListener("touchstart", (e) => {
-      if (!lightboxMedia.contains(e.target)) {
-        lightbox.style.display = "none";
+    closeButton.addEventListener("click", closeLightbox);
+
+    lightbox.onclick = (event) => {
+      if (!lightboxMedia.contains(event.target)) {
+        closeLightbox();
       }
-    });
+    };
   } catch (error) {
     console.error("Error fetching data:", error);
   }
