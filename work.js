@@ -191,6 +191,7 @@ export async function workSection() {
 
               mediaEle.addEventListener("touchstart", (e) => {
                 startX = e.touches[0].clientX;
+                endX = startX;
               });
 
               mediaEle.addEventListener("touchmove", (e) => {
@@ -198,9 +199,10 @@ export async function workSection() {
               });
 
               mediaEle.addEventListener("touchend", () => {
-                if (startX - endX > 50) {
+                const swipeThreshold = 50;
+                if (startX - endX > swipeThreshold) {
                   navigateLightbox(1);
-                } else if (endX - startX > 50) {
+                } else if (endX - startX > swipeThreshold) {
                   navigateLightbox(-1);
                 }
               });
@@ -233,20 +235,40 @@ export async function workSection() {
             document.removeEventListener("keydown", keydownHandler);
             document.addEventListener("keydown", keydownHandler);
 
-            prevButton.onclick = (event) => {
+            prevButton.addEventListener("click", (event) => {
               event.stopPropagation();
               navigateLightbox(-1);
-            };
+            });
 
-            nextButton.onclick = (event) => {
+            nextButton.addEventListener("click", (event) => {
               event.stopPropagation();
               navigateLightbox(1);
-            };
+            });
 
-            closeButton.onclick = closeLightbox;
+            closeButton.addEventListener("click", (event) => {
+              event.stopPropagation();
+              closeLightbox();
+            });
 
+            prevButton.addEventListener("touchstart", (event) => {
+              event.stopPropagation();
+            });
+
+            nextButton.addEventListener("touchstart", (event) => {
+              event.stopPropagation();
+            });
+
+            closeButton.addEventListener("touchstart", (event) => {
+              event.stopPropagation();
+            });
+
+            // lightbox.onclick = (event) => {
+            //   if (!lightboxMedia.contains(event.target)) {
+            //     closeLightbox();
+            //   }
+            // };
             lightbox.onclick = (event) => {
-              if (!lightboxMedia.contains(event.target)) {
+              if (event.target === lightbox) {
                 closeLightbox();
               }
             };

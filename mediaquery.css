@@ -167,9 +167,9 @@
     padding: 0 !important;
   }
 
-  .lightbox .close-button {
+  /* .lightbox .close-button {
     top: calc(100vh - 68rem) !important;
-  }
+  } */
 }
 
 /* from 600px to 665px */
@@ -313,9 +313,9 @@
     text-align: right !important;
   }
 
-  .lightbox .close-button {
+  /* .lightbox .close-button {
     top: calc(100vh - 85rem) !important;
-  }
+  } */
 }
 
 @media (max-width: 399px) {

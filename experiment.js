@@ -13,6 +13,8 @@ export const experiment = async () => {
     const closeButton = document.getElementById("closeButton");
 
     let currentIndex = 0;
+    let startX = 0;
+    let endX = 0;
 
     const textSection = document.createElement("div");
     textSection.className = "exp-text-section";
@@ -73,6 +75,10 @@ export const experiment = async () => {
       updateLightboxContent(currentIndex);
       lightbox.style.display = "flex";
       lightbox.classList.add("show");
+
+      lightboxMedia.addEventListener("touchstart", handleTouchStart);
+      lightboxMedia.addEventListener("touchmove", handleTouchMove);
+      lightboxMedia.addEventListener("touchend", handleTouchEnd);
     }
 
     function updateLightboxContent(index) {
@@ -104,6 +110,10 @@ export const experiment = async () => {
     function closeLightbox() {
       lightbox.style.display = "none";
       lightbox.classList.remove("show");
+
+      lightboxMedia.removeEventListener("touchstart", handleTouchStart);
+      lightboxMedia.removeEventListener("touchmove", handleTouchMove);
+      lightboxMedia.removeEventListener("touchend", handleTouchEnd);
     }
 
     document.removeEventListener("keydown", handleKeyDown);
@@ -136,6 +146,22 @@ export const experiment = async () => {
         closeLightbox();
       }
     };
+
+    function handleTouchStart(e) {
+      startX = e.touches[0].clientX;
+    }
+
+    function handleTouchMove(e) {
+      endX = e.touches[0].clientX;
+    }
+
+    function handleTouchEnd() {
+      if (startX - endX > 50) {
+        navigateLightbox(1);
+      } else if (endX - startX > 50) {
+        navigateLightbox(-1);
+      }
+    }
   } catch (error) {
     console.error("Error fetching data:", error);
   }
