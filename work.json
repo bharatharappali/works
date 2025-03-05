@@ -353,6 +353,59 @@
       ]
     },
     {
+      "title": "Insects are Beautiful",
+      "subTitle": "An explorative piece of Insects with customised features",
+      "description": "A selection of illustrations from a personal archive. Sketching random ideas has been a habit since childhood, though uncertainty remained about their potential for illustration or production in personal and commercial projects. Encouragement from friends and peers led to the decision to digitize some of these sketches. <br><br>Showcased here are a few pieces from the sketchbook archive, with many yet to be digitized—something to explore in free time. These illustrations serve as a reflection of a creative mindset—playful, engaging, and constantly visualizing endless possibilities.",
+      "year": "2022",
+      "additionalInfo": {
+        "projectType": "Illustration",
+        "nature": "Creative Excercise, Personal Project",
+        "shortlisted for": [
+          {
+            "name": "World Illustration Awards 2023",
+            "plink": "https://worldillustrationawards.com/projects/bharath-arappali-insects-are-beautiful/"
+          }
+        ]
+      },
+      "carousel": [
+        {
+          "type": "image",
+          "url": "images/personal_archive/pa--1.webp",
+          "alt": "A bug"
+        },
+        {
+          "type": "image",
+          "url": "images/personal_archive/pa--2.webp",
+          "alt": "Collection of Bugs"
+        },
+        {
+          "type": "image",
+          "url": "images/personal_archive/pa--3.webp",
+          "alt": "Composition 3"
+        },
+        {
+          "type": "image",
+          "url": "images/personal_archive/pa--4.webp",
+          "alt": "Composition 4"
+        },
+        {
+          "type": "image",
+          "url": "images/personal_archive/pa--5.webp",
+          "alt": "Composition 5"
+        },
+        {
+          "type": "image",
+          "url": "images/personal_archive/pa--6.webp",
+          "alt": "Composition 6"
+        },
+        {
+          "type": "image",
+          "url": "images/personal_archive/pa--7.webp",
+          "alt": "Composition 7"
+        }
+      ]
+    },
+    {
       "title": "Personal Archive",
       "subTitle": "A collection of Illustrations",
       "description": "A selection of illustrations from a personal archive. Sketching random ideas has been a habit since childhood, though uncertainty remained about their potential for illustration or production in personal and commercial projects. Encouragement from friends and peers led to the decision to digitize some of these sketches. <br><br>Showcased here are a few pieces from the sketchbook archive, with many yet to be digitized—something to explore in free time. These illustrations serve as a reflection of a creative mindset—playful, engaging, and constantly visualizing endless possibilities.",

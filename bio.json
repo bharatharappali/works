@@ -24,9 +24,10 @@
       "developer": "R. Prithviraj",
       "linkedin": "linkedin.com/in/prithviraj-r-974a25120"
     },
-    "image": {
-      "src": "images/wia_banner.webp",
-      "alt": "World Illustration Awards 2023"
+    "feature": {
+      "label":"Features",
+      "txt": "World Illustration Awards 2023",
+      "link": "worldillustrationawards.com/projects/bharath-arappali-insects-are-beautiful"
     }
   }
 }

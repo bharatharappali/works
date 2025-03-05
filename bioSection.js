@@ -14,6 +14,17 @@ export const bioSection = async () => {
         <div class="bio_sec--1 bt-1">
             <p class="bio-text">${bioData.bio.focus}</p>
         </div>
+        <div class="bio_sec--3 bt-1">
+            <a class="link cv" href="${bioData.bio.cv.file}" download="${bioData.bio.cv.file}">
+                ${bioData.bio.cv.label} (${bioData.bio.cv.format}, ${bioData.bio.cv.size})
+            </a>
+        </div>
+        <div class="bio_sec--6 wia_banner">
+            <p>Features:</p>
+            <a class="link" href="https://${bioData.bio.feature.link}">
+              ${bioData.bio.feature.txt}
+             </a>
+         </div>
         <div class="bio_sec--2 bt-1">
             <p class="bio-text availability">${bioData.bio.availability}</p>
             <div class="contact">
@@ -36,11 +47,6 @@ export const bioSection = async () => {
                 </div>
             </div>
         </div>
-        <div class="bio_sec--3 bt-1">
-            <a class="link cv" href="${bioData.bio.cv.file}" download="${bioData.bio.cv.file}">
-                ${bioData.bio.cv.label} (${bioData.bio.cv.format}, ${bioData.bio.cv.size})
-            </a>
-        </div>
         <div class="bio_sec--4 bt-1">
             <p id="timeStamp"></p>
         </div>
@@ -53,9 +59,6 @@ export const bioSection = async () => {
                     </a>
                 </footer>
             </div>
-        </div>
-        <div class="bio_sec--6 wia_banner">
-            <img src="${bioData.bio.image.src}" class="img-fluid" alt="${bioData.bio.image.alt}">
         </div>
       `;
     };
@@ -112,7 +115,7 @@ export const bioSection = async () => {
         timeZone: "Europe/Rome",
       });
       document.querySelectorAll("#timeStamp").forEach((el) => {
-        el.textContent = `Milan [IT]: ${italyTime}`;
+        el.textContent = `Milan, IT: ${italyTime}`;
       });
     }
 
