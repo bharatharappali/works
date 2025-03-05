@@ -128,9 +128,11 @@ export const experiment = async () => {
     nextButton.addEventListener("click", () => navigateLightbox(1));
     closeButton.addEventListener("click", closeLightbox);
 
-    lightbox.addEventListener("click", (e) => {
-      if (e.target === lightbox) closeLightbox();
-    });
+    lightbox.onclick = (event) => {
+      if (!lightboxMedia.contains(event.target)) {
+        lightbox.style.display = "none";
+      }
+    };
 
     document.addEventListener("keydown", (e) => {
       if (e.key === "ArrowLeft") {
