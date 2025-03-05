@@ -13,6 +13,8 @@ export const experiment = async () => {
     const closeButton = document.getElementById("closeButton");
 
     let currentIndex = 0;
+    let startX = 0;
+    let endX = 0;
 
     const textSection = document.createElement("div");
     textSection.className = "exp-text-section";
@@ -21,11 +23,30 @@ export const experiment = async () => {
     exp.insertBefore(textSection, exp.firstChild);
 
     data.forEach((item, index) => {
+      const columnIndex = index % columns.length;
+
+      const mediaContainer = document.createElement("div");
+      mediaContainer.className = "media-container";
+
+      const mediaWrapper = document.createElement("div");
+      mediaWrapper.className = "media-wrapper";
+
+      const loader = document.createElement("span");
+      loader.className = "loader";
+
       let mediaElement;
+
       if (item.type === "image") {
         mediaElement = document.createElement("img");
         mediaElement.src = item.url;
         mediaElement.alt = item.alt;
+        mediaElement.style.opacity = "0";
+        mediaElement.onload = () => {
+          setTimeout(() => {
+            loader.style.display = "none";
+            mediaElement.style.opacity = "1";
+          }, 500);
+        };
       } else if (item.type === "video") {
         mediaElement = document.createElement("video");
         mediaElement.src = item.url;
@@ -36,10 +57,18 @@ export const experiment = async () => {
         mediaElement.setAttribute("preload", "auto");
         mediaElement.setAttribute("playsinline", "");
         mediaElement.setAttribute("webkit-playsinline", "");
+        mediaElement.style.opacity = "0";
+        mediaElement.onloadeddata = () => {
+          setTimeout(() => {
+            loader.style.display = "none";
+            mediaElement.style.opacity = "1";
+          }, 500);
+        };
       }
-
-      const columnIndex = index % columns.length;
-      columns[columnIndex].appendChild(mediaElement);
+      mediaWrapper.appendChild(loader);
+      mediaWrapper.appendChild(mediaElement);
+      mediaContainer.appendChild(mediaWrapper);
+      columns[columnIndex].appendChild(mediaContainer);
 
       mediaElement.addEventListener("click", () => openLightbox(index));
     });
@@ -67,6 +96,22 @@ export const experiment = async () => {
 
       lightbox.style.display = "flex";
       lightbox.classList.add("show");
+
+      mediaElement.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+      });
+
+      mediaElement.addEventListener("touchmove", (e) => {
+        endX = e.touches[0].clientX;
+      });
+
+      mediaElement.addEventListener("touchend", () => {
+        if (startX - endX > 50) {
+          navigateLightbox(1);
+        } else if (endX - startX > 50) {
+          navigateLightbox(-1);
+        }
+      });
     }
 
     function navigateLightbox(direction) {
@@ -99,6 +144,12 @@ export const experiment = async () => {
 
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") closeLightbox();
+    });
+
+    lightbox.addEventListener("touchstart", (e) => {
+      if (!lightboxMedia.contains(e.target)) {
+        lightbox.style.display = "none";
+      }
     });
   } catch (error) {
     console.error("Error fetching data:", error);

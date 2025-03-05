@@ -7,7 +7,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  height: 100vh !important;
+  height: 99vh !important;
   /* max-height: 100vh !important; */
 }
 
@@ -26,7 +26,7 @@
   border-bottom: none;
 } */
 
-.bio_section> div:not(:first-child){
+.bio_section > div:not(:first-child) {
   border-top: 1px solid;
   padding-top: 0.5rem;
 }

@@ -6,7 +6,8 @@
 
 @font-face {
   font-family: "Standard";
-  src: url(fonts/standard-book-webfont.woff),url(fonts/standard-book-webfont.woff2);
+  src: url(fonts/standard-book-webfont.woff),
+    url(fonts/standard-book-webfont.woff2);
 }
 
 *,
@@ -75,6 +76,12 @@ button {
   padding: 0;
   margin: 0;
   font-family: "Standard", Helvetica, sans-serif;
+}
+
+img,
+video,
+iframe {
+  transition: opacity 0.3s ease-in-out;
 }
 
 .container {
@@ -193,6 +200,43 @@ nav {
   -webkit-background-clip: text;
   color: transparent;
   animation: glowing 3.2s linear infinite;
+}
+
+.media-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.media-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #333;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes glowing {

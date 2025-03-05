@@ -41,6 +41,10 @@ export async function workSection() {
             project.carousel.map(async (item) => {
               const scrollItem = document.createElement("div");
               scrollItem.className = "scroll-item";
+              const mediaWrapper = document.createElement("div");
+              mediaWrapper.className = "media-wrapper";
+              const loader = document.createElement("span");
+              loader.className = "loader";
 
               let mediaEle;
 
@@ -49,6 +53,14 @@ export async function workSection() {
                 mediaEle.src = item.url;
                 mediaEle.alt = item.alt;
                 mediaEle.style.width = "auto";
+                mediaEle.style.opacity = "0";
+
+                mediaEle.onload = () => {
+                  setTimeout(() => {
+                    loader.style.display = "none";
+                    mediaEle.style.opacity = "1";
+                  }, 500);
+                };
                 mediaEle.style.height = "100%";
               } else if (item.type === "video") {
                 mediaEle = document.createElement("video");
@@ -58,11 +70,19 @@ export async function workSection() {
                 mediaEle.muted = true;
                 mediaEle.setAttribute("playsinline", "");
                 mediaEle.setAttribute("webkit-playsinline", "");
+                mediaEle.style.opacity = "0";
 
                 const sourceMp4 = document.createElement("source");
                 sourceMp4.src = item.url;
                 sourceMp4.type = "video/mp4";
                 mediaEle.appendChild(sourceMp4);
+
+                mediaEle.onloadeddata = () => {
+                  setTimeout(() => {
+                    loader.style.display = "none";
+                    mediaEle.style.opacity = "1";
+                  }, 500);
+                };
               } else if (item.type === "iframe") {
                 mediaEle = document.createElement("iframe");
                 let url = new URL(item.url);
@@ -74,9 +94,17 @@ export async function workSection() {
                 mediaEle.allow =
                   "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
                 mediaEle.allowFullscreen = true;
+                mediaEle.style.opacity = "0";
+
+                setTimeout(() => {
+                  loader.style.display = "none";
+                  mediaEle.style.opacity = "1";
+                }, 1000);
               }
 
-              scrollItem.appendChild(mediaEle);
+              mediaWrapper.appendChild(loader);
+              mediaWrapper.appendChild(mediaEle);
+              scrollItem.appendChild(mediaWrapper);
               mediaEle.addEventListener("click", (event) => {
                 const mediaIndex = [...scrollContainer.children].indexOf(
                   event.currentTarget.parentElement
@@ -115,6 +143,9 @@ export async function workSection() {
             const prevButton = document.querySelector(".controls.prev");
             const nextButton = document.querySelector(".controls.next");
             const closeButton = document.getElementById("closeButton");
+
+            let startX = 0;
+            let endX = 0;
 
             function updateLightboxContent(index) {
               const item = mediaArray[index];
@@ -157,6 +188,24 @@ export async function workSection() {
               lightboxFooter.innerHTML = `<p>Media ${index + 1} of ${
                 mediaArray.length
               }</p>`;
+
+              mediaEle.addEventListener("touchstart", (e) => {
+                startX = e.touches[0].clientX;
+              });
+
+              mediaEle.addEventListener("touchmove", (e) => {
+                endX = e.touches[0].clientX;
+              });
+
+              mediaEle.addEventListener("touchend", () => {
+                if (startX - endX > 50) {
+                  index = (index + 1) % mediaArray.length;
+                  updateLightboxContent(index);
+                } else if (endX - startX > 50) {
+                  index = (index - 1 + mediaArray.length) % mediaArray.length;
+                  updateLightboxContent(index);
+                }
+              });
             }
 
             updateLightboxContent(index);
@@ -184,13 +233,20 @@ export async function workSection() {
               lightbox.style.display = "none";
             };
 
-            window.onclick = (event) => {
-              if (event.target === lightbox) {
+            lightbox.onclick = (event) => {
+              if (!lightboxMedia.contains(event.target)) {
                 lightbox.style.display = "none";
               }
             };
+
             document.addEventListener("keydown", (e) => {
               if (e.key === "Escape") lightbox.style.display = "none";
+            });
+
+            lightbox.addEventListener("touchstart", (e) => {
+              if (!lightboxMedia.contains(e.target)) {
+                lightbox.style.display = "none";
+              }
             });
           }
 
