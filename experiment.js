@@ -5,11 +5,11 @@ export const experiment = async () => {
 
     const exp = document.getElementById("expSection");
     const columns = document.querySelectorAll(".column");
-    const lightbox = document.getElementById("lightbox");
-    const lightboxMedia = document.getElementById("lightboxMedia");
-    const lightboxFooter = document.getElementById("lightboxFooter");
-    const prevButton = document.querySelector(".lightbox .prev");
-    const nextButton = document.querySelector(".lightbox .next");
+    const lightbox = document.getElementById("lightbox_exp");
+    const lightboxMedia = document.getElementById("lightbox_exp_Media");
+    const lightboxFooter = document.getElementById("lightbox_exp_footer");
+    const prevButton = document.querySelector(".lightbox_exp .prev");
+    const nextButton = document.querySelector(".lightbox_exp .next");
     const closeButton = document.getElementById("closeButton");
 
     let currentIndex = 0;

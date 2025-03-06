@@ -263,7 +263,7 @@ export async function workSection() {
             });
 
             lightbox.onclick = (event) => {
-              if (event.target === lightbox) {
+              if (!lightboxMedia.contains(event.target)) {
                 closeLightbox();
               }
             };
