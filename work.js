@@ -262,22 +262,11 @@ export async function workSection() {
               event.stopPropagation();
             });
 
-            // lightbox.onclick = (event) => {
-            //   if (!lightboxMedia.contains(event.target)) {
-            //     closeLightbox();
-            //   }
-            // };
             lightbox.onclick = (event) => {
               if (event.target === lightbox) {
                 closeLightbox();
               }
             };
-
-            lightbox.addEventListener("touchstart", (e) => {
-              if (!lightboxMedia.contains(e.target)) {
-                closeLightbox();
-              }
-            });
           }
           // Project Details
           const detailsDiv = document.createElement("div");
