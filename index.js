@@ -142,7 +142,27 @@ document
       changeColors();
     });
   });
-
-workSection();
-experiment();
 bioSection();
+// experiment();
+document.addEventListener("DOMContentLoaded", function () {
+  const loaderContainer = document.createElement("div");
+  loaderContainer.className = "loader-container";
+  document.body.appendChild(loaderContainer);
+  const loader = document.createElement("span");
+  loader.className = "loader_i";
+  loaderContainer.appendChild(loader);
+  let isFirstLoad = localStorage.getItem("isFirstLoad");
+
+  if (!isFirstLoad) {
+    localStorage.setItem("isFirstLoad", "true");
+
+    window.location.reload();
+  } else {
+    setTimeout(() => {
+      loader.remove();
+      loaderContainer.remove();
+      workSection();
+      experiment();
+    }, 3000);
+  }
+});
