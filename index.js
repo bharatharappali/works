@@ -143,7 +143,7 @@ document
     });
   });
 bioSection();
-// experiment();
+experiment();
 document.addEventListener("DOMContentLoaded", function () {
   const loaderContainer = document.createElement("div");
   loaderContainer.className = "loader-container";
@@ -162,7 +162,6 @@ document.addEventListener("DOMContentLoaded", function () {
       loader.remove();
       loaderContainer.remove();
       workSection();
-      experiment();
     }, 3000);
   }
 });

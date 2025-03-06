@@ -34,7 +34,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth !important;
-  scrollbar-width: none;
+  scrollbar-width: none !important;
 }
 
 body {
@@ -154,10 +154,13 @@ nav {
   display: none;
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
+  scrollbar-width: none !important;
 }
 
 .section.active {
   display: block;
+  height: 100%;
+  overflow-y: auto;
   opacity: 1;
   transform: translateY(0);
 }
