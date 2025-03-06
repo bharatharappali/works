@@ -106,9 +106,6 @@ footer a:hover {
   cursor: pointer;
 }
 
-.wia_banner img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
+.wia_banner a {
+ cursor: pointer;
 }

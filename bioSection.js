@@ -21,7 +21,7 @@ export const bioSection = async () => {
         </div>
         <div class="bio_sec--6 wia_banner">
             <p>Features:</p>
-            <a class="link" href="https://${bioData.bio.feature.link}">
+            <a class="link" href="https://${bioData.bio.feature.link}" target="_blank" rel="noopener noreferrer">
               ${bioData.bio.feature.txt}
              </a>
          </div>
@@ -54,7 +54,7 @@ export const bioSection = async () => {
             <div class="dateTime">
                 <p id="dateStamp">${bioData.bio.footer.last_updated}</p>
                 <footer>
-                    Developed by <a class="link" href="https://${bioData.bio.footer.linkedin}">
+                    Developed by <a class="link" href="https://${bioData.bio.footer.linkedin}" target="_blank" rel="noopener noreferrer">
                         ${bioData.bio.footer.developer}
                     </a>
                 </footer>
